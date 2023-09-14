@@ -1,6 +1,6 @@
 import psycopg2
 
-class Usuario():
+class usuario():
     id = ""
     nombre = ""
     apellido = ""
@@ -24,8 +24,8 @@ class Usuario():
         except psycopg2.Error as e:
             print("Ocurrió un error al crear el usuario: ", e)
             return False
-    
-    def leerUsuarios(conexion):
+        
+    def leerUsuarios(self, conexion):
         try:
             with conexion.cursor() as cursor:
                 consulta = "SELECT * FROM usuarios;"
@@ -49,3 +49,14 @@ class Usuario():
         except psycopg2.Error as e:
             print("Ocurrió un error al eliminar el usuario: ", e)
             return False
+        
+    def buscarUsuario(self, conexion, nombre, apellido):
+        try:
+            with conexion.cursor() as cursor:
+                consulta = "SELECT FROM usuarios WHERE nombre = %s AND apellido = %s;"
+                cursor.execute(consulta, (nombre, apellido))
+            conexion.commit()
+            return True
+        except psycopg2.Error as e:
+            print("Ocurrió un error al buscar el usuario: ", e)
+            return False    
