@@ -40,7 +40,7 @@ def mostrar_menu():
     print("\n--- Menú de Funciones ---")
     print("1. Crear usuario")
     print("2. Leer usuarios")
-    print("3. Iniciar sesión")
+#    print("3. Iniciar sesión")
     print("4. Actualizar usuario")
     print("5. Eliminar usuario")
     print("6. Cerrar conexión")
@@ -51,7 +51,7 @@ def mostrar_menu():
 
 if __name__ == "__main__":
     conexion = conectar_bd()
-    uasuearios = usuario("", "", "")
+    usuario1 = usuario("", "", "")
 
     while True:
         opcion = mostrar_menu()
@@ -59,7 +59,7 @@ if __name__ == "__main__":
         if opcion == "1":
             nombre = input("Nombre del usuario: ")
             apellido = input("Apellido del usuario: ")
-            uasuearios.crearUsuario(conexion, nombre, apellido)
+            usuario1.crearUsuario(conexion, nombre, apellido)
 
         elif opcion == "2":
             if conexion is not None:
@@ -111,4 +111,5 @@ if __name__ == "__main__":
 
         else:
             print("Opción no válida. Intente de nuevo.")
+
 
