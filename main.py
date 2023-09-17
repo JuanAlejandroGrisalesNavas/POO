@@ -51,7 +51,7 @@ def mostrar_menu():
 
 if __name__ == "__main__":
     conexion = conectar_bd()
-    usuario1 = usuario("", "", "")
+    usuario1 = Usuario("", "", "")
 
     while True:
         opcion = mostrar_menu()
@@ -111,5 +111,3 @@ if __name__ == "__main__":
 
         else:
             print("Opción no válida. Intente de nuevo.")
-
-

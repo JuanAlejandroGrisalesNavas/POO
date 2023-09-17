@@ -1,12 +1,12 @@
 import psycopg2
 
-class usuario():
+class Usuario():
     id = ""
     nombre = ""
     apellido = ""
     documento = ""
     usuario = ""
-    contrasena = "
+    contrasena = ""
 
     def __init__(self, nombre, apellido, documento):
         self.nombre = nombre
@@ -68,13 +68,29 @@ class usuario():
     def actualizarUsuario(self, conexion, nombre, apellido):
         try:
             with conexion.cursor() as cursor:
-                consulta = "UPDATE usuarios SET nombre = %s, apellido = %s WHERE nombre = %s AND apellido = %s;"
-                cursor.execute(consulta, (nombre, apellido))
-            conexion.commit()
-            return True
+                cursor.execute("SELECT * FROM usuarios WHERE nombre=%s", (nombre,))
+                usuario = cursor.fetchone()
+                if usuario:
+                    print("Usuario encontrado:")
+                    print(usuario)
+
+                    cambios = {}
+                    cambios["nuevo_nombre"] = input("Nombre usuario a modificar: ")
+                    cambios["nuevo_apellido"] = input("Apellido usuario a modificar: ")
+
+                    confirmacion = input("¿Desea aplicar estos cambios? (S/N): ").strip().lower()
+
+                    if confirmacion == "s":
+                        with conexion.cursor() as cursor:
+                            cursor.execute("UPDATE usuarios SET nombre=%s, apellido=%s WHERE nombre=%s", (cambios["nuevo_nombre"], cambios["nuevo_apellido"], nombre))
+                            conexion.commit()
+                        print("Usuario actualizado exitosamente.")
+                    else:
+                        print("Cambios no aplicados.")
+                else:
+                    print("El usuario no existe")
         except psycopg2.Error as e:
-            print("Ocurrió un error al actualizar el usuario: ", e)
-            return False
+            print("Ocurrió un error al consultar o actualizar el usuario: ", e)
     
     #login
     def login(self,conexion,usuario,contrasena):
@@ -91,9 +107,8 @@ class usuario():
                     return False
         except psycopg2.Error as e:
             print("Ocurrió un error al buscar el usuario:", e)
-            return False 
+            return False
 
-    
     #close
     def close(self,conexion):
         try:
