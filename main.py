@@ -59,7 +59,7 @@ if __name__ == "__main__":
         if opcion == "1":
             nombre = input("Nombre del usuario: ")
             apellido = input("Apellido del usuario: ")
-            usuario1.crearUsuario(conexion, nombre, apellido)
+            usuario1.crearUsuario(conexion, nombre, apellido, documento, usuario, contrasena)
 
         elif opcion == "2":
             if conexion is not None:
@@ -82,7 +82,7 @@ if __name__ == "__main__":
             if conexion is not None:
                 nuevo_nombre = input("Nuevo nombre: ")
                 nuevo_apellido = input("Nuevo apellido: ")
-                usuario1.actualizarUsuario(conexion, nuevo_nombre, nuevo_apellido)
+                usuario1.actualizarUsuario(conexion, nuevo_nombre, nuevo_apellido, nuevo_usuario, nuevo_contraseña)
             else:
                 print("Debe conectar a la base de datos primero.")
 
@@ -90,7 +90,7 @@ if __name__ == "__main__":
             if conexion is not None:
                 nombre = input("Nombre del usuario a eliminar: ")
                 apellido = input("Apellido del usuario a eliminar: ")
-                usuario1.eliminarUsuario(conexion, nombre, apellido)
+                usuario1.eliminarUsuario(conexion, nombre, apellido, documento, usuario, contrasena)
             else:
                 print("Debe conectar a la base de datos primero.")
 
