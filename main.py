@@ -59,6 +59,9 @@ if __name__ == "__main__":
         if opcion == "1":
             nombre = input("Nombre del usuario: ")
             apellido = input("Apellido del usuario: ")
+            documento = input("Documento del usuario: ")
+            usuario = input("Usuario de la persona: ")
+            contrasena = input("Contraseña del usuario: ")
             usuario1.crearUsuario(conexion, nombre, apellido, documento, usuario, contrasena)
 
         elif opcion == "2":
