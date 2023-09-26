@@ -85,7 +85,9 @@ if __name__ == "__main__":
             if conexion is not None:
                 nuevo_nombre = input("Nuevo nombre: ")
                 nuevo_apellido = input("Nuevo apellido: ")
-                usuario1.actualizarUsuario(conexion, nuevo_nombre, nuevo_apellido, nuevo_usuario, nuevo_contraseña)
+                nuevo_usuario = input("Nuevo usuario: ")
+                nueva_contrasena = input("Nueva contraseña")
+                usuario1.actualizarUsuario(conexion, nuevo_nombre, nuevo_apellido, nuevo_usuario, nueva_contrasena)
             else:
                 print("Debe conectar a la base de datos primero.")
 
