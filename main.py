@@ -1,25 +1,6 @@
 from basededatos import *
 from usuarios import *
-
-#conexion =Basedatos("berry.db.elephantsql.com", "zcogoady" ,5432, "cQlAt2_pKmQf5QGpBTr8tNyHKqGjwfVg", "zcogoady")
-#conexionExitosa = conexion.conectar()
-
-#usuario1 = usuario("Juanito", "Navas", "2456378")
-#usuario2 = usuario("Vane", "Montoya", "9786756")
-
-#usuario1.imprimirNombre()
-#usuario1.imprimirNombre()
-
-#usuario1.crearUsuario(conexionExitosa, "Juanito", "Navas")
-#usuario2.crearUsuario(conexionExitosa, "Vane", "Montoya")
-
-#Crear, leer, editar y eliminar
-
-#usuario1.eliminarUsuario(conexionExitosa, "Vane", "Montoya")
-#usuario1.leerUsuarios(conexionExitosa)
-
-#usuario1.buscarUsuario(conexionExitosa, "Juanito", "Navas")
-
+from locales import *
 
 def conectar_bd():
     try:
@@ -35,7 +16,6 @@ def conectar_bd():
         print("Error de conexión a la base de datos:", e)
         return None
     
-
 def mostrar_menu():
     print("\n--- Menú de Funciones ---")
     print("1. Crear usuario")
@@ -44,14 +24,15 @@ def mostrar_menu():
     print("4. Actualizar usuario")
     print("5. Eliminar usuario")
     print("6. Cerrar conexión")
+    print("7. Crear local")
     print("0. Salir")
     opcion = input("Seleccione una opción: ")
     return opcion
 
-
 if __name__ == "__main__":
     conexion = conectar_bd()
-    usuario1 = Usuario("", "", "")
+    usuario1 = Usuario("", "", "", "", "")
+    local1 = Local("", "", "")
 
     while True:
         opcion = mostrar_menu()
@@ -107,6 +88,14 @@ if __name__ == "__main__":
                 usuario1 = None
             else:
                 print("No hay conexión abierta.")
+            
+        elif opcion == "7":
+            if conexion is not None:
+                nombre = input("Nombre del local: ")
+                producto = input("Nombre producto: ")
+                cantProducto = input("Cantidad producto: ")
+                local1.crearLocal(conexion, nombre, producto, cantProducto)
+
 
         elif opcion == "0":
             if conexion is not None:
