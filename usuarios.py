@@ -15,9 +15,6 @@ class Usuario():
         self.usuario
         self.contrasena
 
-    def imprimirNombre(self):
-        print("El nombre del usuario es ", self.nombre)
-
     def crearUsuario(self, conexion, nombre, apellido, documento, usuario, contrasena):
         try:
             with conexion.cursor() as cursor:
@@ -66,8 +63,6 @@ class Usuario():
             print("Ocurrió un error al buscar el usuario: ", e)
             return False    
 
-
-    #update
     def actualizarUsuario(self, conexion, nombre, apellido, usuario, contrasena):
         try:
             with conexion.cursor() as cursor:
@@ -97,7 +92,7 @@ class Usuario():
         except psycopg2.Error as e:
             print("Ocurrió un error al consultar o actualizar el usuario: ", e)
     
-    #login
+    #Revisar
     def login(self,conexion,usuario,contrasena):
         try:
             with conexion.cursor() as cursor:
@@ -114,7 +109,6 @@ class Usuario():
             print("Ocurrió un error al buscar el usuario:", e)
             return False
 
-    #close
     def close(self,conexion):
         try:
             conexion.close()
