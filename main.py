@@ -32,7 +32,7 @@ def mostrar_menu():
 if __name__ == "__main__":
     conexion = conectar_bd()
     usuario1 = Usuario("", "", "", "", "")
-    local1 = Local("", "", "")
+    local1 = Local("")
 
     while True:
         opcion = mostrar_menu()
@@ -91,11 +91,13 @@ if __name__ == "__main__":
             
         elif opcion == "7":
             if conexion is not None:
-                nombre = input("Nombre del local: ")
-                producto = input("Nombre producto: ")
-                cantProducto = input("Cantidad producto: ")
-                local1.crearLocal(conexion, nombre, producto, cantProducto)
+                nombre_local = input("Nombre del local: ")
+                local1.crearLocal(conexion, nombre_local)
 
+        elif opcion == "8":
+            if conexion is not None:
+                nombre_local = input("Nombre del local a eliminar: ")
+                local1.eliminarLocal(conexion, nombre_local)
 
         elif opcion == "0":
             if conexion is not None:
