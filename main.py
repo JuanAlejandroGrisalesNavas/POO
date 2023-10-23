@@ -1,6 +1,7 @@
 from basededatos import *
 from usuarios import *
 from locales import *
+from productos import *
 
 def conectar_bd():
     try:
@@ -33,7 +34,7 @@ if __name__ == "__main__":
     conexion = conectar_bd()
     usuario1 = Usuario("", "", "", "", "")
     local1 = Local("")
-
+    producto1 = Producto("", "", "", "")
     while True:
         opcion = mostrar_menu()
 
