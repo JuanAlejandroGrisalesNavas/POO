@@ -8,7 +8,6 @@ class Usuario():
     contrasena = ""
 
     def __init__(self, nombre, apellido, documento,usuario,contrasena):
-
         self.nombre = nombre
         self.apellido = apellido
         self.documento = documento
