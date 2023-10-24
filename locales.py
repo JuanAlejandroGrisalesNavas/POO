@@ -49,3 +49,29 @@ class Local():
         except psycopg2.Error as e:
             print("Ocurrió un error al buscar el local: ", e)
             return False
+        
+    def actualizarLocal(self, conexion, nombre_local):
+        try:
+            with conexion.cursor() as cursor:
+                cursor.execute("SELECT * FROM locales WHERE nombre_local = %s", (nombre_local))
+                local = cursor.fetchone()
+                if local:
+                    print("Local encontrado: ")
+                    print(local)
+
+                    cambios = {}
+                    cambios["nuevo_nombre_local"] = input("Nombre local a modificar: ")
+
+                    confirmacion = input("¿Desea aplicar estos cambios? (S/N): ").strip().lower()
+
+                    if confirmacion == "s":
+                        with conexion.cursor() as cursor:
+                            cursor.execute("UPDATE locales SET nombre_local = %s WHERE nombre_local = %s", cambios["nuevo_nombre_local"])
+                            conexion.commit()
+                        print("Local actualizado exitosamente.")
+                    else:
+                        print("Cambios no aplicados.")
+                else:
+                    print("El local no existe")
+        except psycopg2.Error as e:
+            print("Ocurrió un error al consultar o actualizar el local: ", e)
