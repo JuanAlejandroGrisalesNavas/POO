@@ -65,7 +65,7 @@ class Usuario():
     def actualizarUsuario(self, conexion, nombre, apellido, usuario, contrasena):
         try:
             with conexion.cursor() as cursor:
-                cursor.execute("SELECT * FROM usuarios WHERE nombre=%s", (nombre,))
+                cursor.execute("SELECT * FROM usuarios WHERE nombre = %s", (nombre,))
                 usuario = cursor.fetchone()
                 if usuario:
                     print("Usuario encontrado:")
@@ -81,7 +81,7 @@ class Usuario():
 
                     if confirmacion == "s":
                         with conexion.cursor() as cursor:
-                            cursor.execute("UPDATE usuarios SET nombre=%s, apellido=%s, usuario=%s, contraseña=%s, WHERE nombre=%s", (cambios["nuevo_nombre"], cambios["nuevo_apellido"], nombre, cambios["nuevo_usuario"], cambios["nuevo_contraseña"]))
+                            cursor.execute("UPDATE usuarios SET nombre = %s, apellido = %s, usuario = %s, contrasena = %s, WHERE nombre = %s", (cambios["nuevo_nombre"], cambios["nuevo_apellido"], nombre, cambios["nuevo_usuario"], cambios["nuevo_contraseña"]))
                             conexion.commit()
                         print("Usuario actualizado exitosamente.")
                     else:
