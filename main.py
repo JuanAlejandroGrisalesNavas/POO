@@ -2,6 +2,8 @@ from basededatos import *
 from usuarios import *
 from locales import *
 from productos import *
+from pedidos import *
+from facturas import *
 
 def conectar_bd():
     try:
