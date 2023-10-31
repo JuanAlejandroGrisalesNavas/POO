@@ -34,7 +34,7 @@ def mostrar_menu():
 
 if __name__ == "__main__":
     conexion = conectar_bd()
-    usuario1 = Usuario("", "", "", "", "")
+    usuario1 = Usuario("", "", "", "", "", "")
     local1 = Local("")
     producto1 = Producto("", "", "", "")
     while True:
@@ -46,7 +46,8 @@ if __name__ == "__main__":
             documento = input("Documento del usuario: ")
             usuario = input("Usuario de la persona: ")
             contrasena = input("Contraseña del usuario: ")
-            usuario1.crearUsuario(conexion, nombre, apellido, documento, usuario, contrasena)
+            rol = input("Puesto del usuario: ")
+            usuario1.crearUsuario(conexion, nombre, apellido, documento, usuario, contrasena, rol)
 
         elif opcion == "2":
             if conexion is not None:
