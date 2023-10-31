@@ -6,19 +6,21 @@ class Usuario():
     documento = ""
     usuario = ""
     contrasena = ""
+    rol = ""
 
-    def __init__(self, nombre, apellido, documento,usuario,contrasena):
+    def __init__(self, nombre, apellido, documento, usuario, contrasena, rol):
         self.nombre = nombre
         self.apellido = apellido
         self.documento = documento
-        self.usuario
-        self.contrasena
+        self.usuario = usuario
+        self.contrasena = contrasena
+        self.rol = rol
 
-    def crearUsuario(self, conexion, nombre, apellido, documento, usuario, contrasena):
+    def crearUsuario(self, conexion, nombre, apellido, documento, usuario, contrasena, rol):
         try:
             with conexion.cursor() as cursor:
-                consulta = "INSERT INTO usuarios(nombre, apellido, documento, usuario, contrasena) VALUES (%s, %s);"
-                cursor.execute(consulta, (nombre, apellido, documento, usuario, contrasena))
+                consulta = "INSERT INTO usuarios(nombre, apellido, documento, usuario, contrasena, rol) VALUES (%s, %s);"
+                cursor.execute(consulta, (nombre, apellido, documento, usuario, contrasena, rol))
             conexion.commit()
             return True
         except psycopg2.Error as e:
@@ -37,35 +39,36 @@ class Usuario():
                     print("Documento:", usuario[2])
                     print("usuario: ", usuario[3])
                     print("contraseña", usuario[4])
+                    print("Puesto", usuario[5])
         except psycopg2.Error as e:
             print("Ocurrió un error al leer los usuarios:", e)
 
-    def eliminarUsuario(self, conexion, nombre, apellido, documento, usuario, contrasena):
+    def eliminarUsuario(self, conexion, nombre, apellido, documento, usuario, contrasena, rol):
         try:
             with conexion.cursor() as cursor:
-                consulta = "DELETE FROM usuarios WHERE nombre = %s AND apellido = %s;"
-                cursor.execute(consulta, (nombre, apellido, documento, usuario, contrasena))
+                consulta = "DELETE FROM usuarios WHERE documento = %s;"
+                cursor.execute(consulta, (nombre, apellido, documento, usuario, contrasena, rol))
             conexion.commit()
             return True
         except psycopg2.Error as e:
             print("Ocurrió un error al eliminar el usuario: ", e)
             return False
         
-    def buscarUsuario(self, conexion, nombre, apellido, documento, usuario, contrasena):
+    def buscarUsuario(self, conexion, nombre, apellido, documento, usuario, contrasena, rol):
         try:
             with conexion.cursor() as cursor:
-                consulta = "SELECT FROM usuarios WHERE nombre = %s AND apellido = %s;"
-                cursor.execute(consulta, (nombre, apellido, documento, usuario, contrasena))
+                consulta = "SELECT FROM usuarios WHERE documento = %s;"
+                cursor.execute(consulta, (nombre, apellido, documento, usuario, contrasena, rol))
             conexion.commit()
             return True
         except psycopg2.Error as e:
             print("Ocurrió un error al buscar el usuario: ", e)
             return False    
 
-    def actualizarUsuario(self, conexion, nombre, apellido, usuario, contrasena):
+    def actualizarUsuario(self, conexion, nombre, apellido, documento, usuario, contrasena):
         try:
             with conexion.cursor() as cursor:
-                cursor.execute("SELECT * FROM usuarios WHERE nombre = %s", (nombre,))
+                cursor.execute("SELECT * FROM usuarios WHERE documento = %s", (documento))
                 usuario = cursor.fetchone()
                 if usuario:
                     print("Usuario encontrado:")
