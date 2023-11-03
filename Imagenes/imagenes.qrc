@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="Login">
+    <file>AdobeStock_621193540.png</file>
+    <file>AdobeStock_609826938.jpeg</file>
+    <file>Welcome.png</file>
+  </qresource>
+</RCC>
