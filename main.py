@@ -57,9 +57,9 @@ if __name__ == "__main__":
 
 #        elif opcion == "3":
 #            if conexion is not None:
-#                nombre_usuario = input("Nombre de usuario: ")
+#                usuario = input("Nombre de usuario: ")
 #                contrasena = input("Contraseña: ")
-#                if usuario1.login(conexion, nombre_usuario, contrasena):
+#                if usuario1.login(conexion, usuario, contrasena):
 #                    print("Inicio de sesión exitoso.")
 #                else:
 #                    print("Inicio de sesión fallido. Usuario o contraseña incorrectos.")
