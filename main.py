@@ -23,11 +23,12 @@ def mostrar_menu():
     print("\n--- Menú de Funciones ---")
     print("1. Crear usuario")
     print("2. Leer usuarios")
-#    print("3. Iniciar sesión")
-    print("4. Actualizar usuario")
-    print("5. Eliminar usuario")
-    print("6. Cerrar conexión")
-    print("7. Crear local")
+    print("3. Eliminar usuario")
+    print("4. Buscar usuario")
+    print("5. Actualizar usuario")
+    print("6. Iniciar sesión")
+    print("7. Cerrar conexión")
+    print("8. Crear local")
     print("0. Salir")
     opcion = input("Seleccione una opción: ")
     return opcion
@@ -55,36 +56,44 @@ if __name__ == "__main__":
             else:
                 print("Debe conectar a la base de datos primero.")
 
-#        elif opcion == "3":
-#            if conexion is not None:
-#                usuario = input("Nombre de usuario: ")
-#                contrasena = input("Contraseña: ")
-#                if usuario1.login(conexion, usuario, contrasena):
-#                    print("Inicio de sesión exitoso.")
-#                else:
-#                    print("Inicio de sesión fallido. Usuario o contraseña incorrectos.")
-#            else:
-#                print("Debe conectar a la base de datos primero.")
+        elif opcion == "3":
+            if conexion is not None:
+                nombre = ""
+                apellido = ""
+                documento = input("Documento del usuario a eliminar: ")
+                usuario = ""
+                contrasena = ""
+                rol = ""
+                usuario1.eliminarUsuario(conexion, nombre, apellido, documento, usuario, contrasena, rol)
+            else:
+                print("El usuario no pudo ser eliminado.")
 
         elif opcion == "4":
             if conexion is not None:
-                nuevo_nombre = input("Nuevo nombre: ")
-                nuevo_apellido = input("Nuevo apellido: ")
-                nuevo_usuario = input("Nuevo usuario: ")
-                nueva_contrasena = input("Nueva contraseña")
-                usuario1.actualizarUsuario(conexion, nuevo_nombre, nuevo_apellido, nuevo_usuario, nueva_contrasena)
+                documento = input("Documento del usuario a buscar: ")
+                usuario1.buscarUsuario(conexion, documento)
             else:
-                print("Debe conectar a la base de datos primero.")
+                print("No se pudo encontrar al usuario.")
 
         elif opcion == "5":
             if conexion is not None:
-                nombre = input("Nombre del usuario a eliminar: ")
-                apellido = input("Apellido del usuario a eliminar: ")
-                usuario1.eliminarUsuario(conexion, nombre, apellido, documento, usuario, contrasena)
+                documento = input("Documento del usuario a modificar: ")
+                usuario1.actualizarUsuario(conexion, documento)
+            else:
+                print("No se pudo modificar el usuario.")
+                
+        elif opcion == "6":
+            if conexion is not None:
+                usuario = input("Nombre de usuario: ")
+                contrasena = input("Contraseña: ")
+                if usuario1.login(conexion, usuario, contrasena):
+                    print("Inicio de sesión exitoso.")
+                else:
+                    print("Inicio de sesión fallido. Usuario o contraseña incorrectos.")
             else:
                 print("Debe conectar a la base de datos primero.")
 
-        elif opcion == "6":
+        elif opcion == "7":
             if conexion is not None:
                 conexion.close()
                 print("Conexión cerrada.")

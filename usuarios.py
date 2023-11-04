@@ -37,11 +37,11 @@ class Usuario:
         except psycopg2.Error as e:
             print("Ocurrió un error al leer los usuarios:", e)
 
-    def eliminarUsuario(self, conexion, nombre):
+    def eliminarUsuario(self, conexion, nombre, apellido, documento, usuario, contrasena, rol):
         try:
             with conexion.cursor() as cursor:
-                consulta = "DELETE FROM usuarios WHERE nombre = %s;"
-                cursor.execute(consulta, (nombre))
+                consulta = "DELETE FROM usuarios WHERE documento = %s;"
+                cursor.execute(consulta, (documento,))
             conexion.commit()
             print("Usuario eliminado exitosamente.")
             return True
