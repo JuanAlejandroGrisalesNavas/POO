@@ -12,10 +12,16 @@ class Usuario:
     def crearUsuario(self, conexion, nombre, apellido, documento, usuario, contrasena, rol):
         try:
             with conexion.cursor() as cursor:
-                consulta = "INSERT INTO usuarios (nombre, apellido, documento, usuario, contrasena, rol) VALUES (%s, %s, %s, %s, %s, %s);"
-                cursor.execute(consulta, (nombre, apellido, documento, usuario, contrasena, rol))
+                consulta = "SELECT * FROM usuarios WHERE documento = %s;"
+                cursor.execute(consulta, (documento,))
+                usuario = cursor.fetchone()
+                if usuario:
+                    print("Ya existe un usuario con ese numero de documento.")
+                else:
+                    consulta = "INSERT INTO usuarios (nombre, apellido, documento, usuario, contrasena, rol) VALUES (%s, %s, %s, %s, %s, %s);"
+                    cursor.execute(consulta, (nombre, apellido, documento, usuario, contrasena, rol))
+                    print("Usuario creado exitosamente.")
             conexion.commit()
-            print("Usuario creado exitosamente.")
             return True
         except psycopg2.Error as e:
             print("Ocurrió un error al crear el usuario:", e)
