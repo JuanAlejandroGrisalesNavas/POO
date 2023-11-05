@@ -135,8 +135,8 @@ if __name__ == "__main__":
 
         elif opcion == "12":
             if conexion is not None:
-                nuevo_nombre_local = input("Nombre del local a actualizar: ")
-                local1.actualizarLocal(conexion, nuevo_nombre_local)
+                nombre_local = input("Nombre del local a actualizar: ")
+                local1.actualizarLocal(conexion, nombre_local)
             else:
                 print("No se pudo eliminar el local.")
 

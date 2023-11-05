@@ -57,7 +57,7 @@ class Local():
     def actualizarLocal(self, conexion, nombre_local):
         try:
             with conexion.cursor() as cursor:
-                cursor.execute("SELECT * FROM locales WHERE nombre_local = %s", (nombre_local))
+                cursor.execute("SELECT * FROM locales WHERE nombre_local = %s", (nombre_local,))
                 local = cursor.fetchone()
                 if local:
                     print("Local encontrado: ")
@@ -70,7 +70,7 @@ class Local():
 
                     if confirmacion == "s":
                         with conexion.cursor() as cursor:
-                            cursor.execute("UPDATE locales SET nombre_local = %s WHERE nombre_local = %s", cambiosLocal["nuevo_nombre_local"], nombre_local)
+                            cursor.execute("UPDATE locales SET nombre_local = %s WHERE nombre_local = %s", (cambiosLocal["nuevo_nombre_local"], nombre_local))
                             conexion.commit()
                         print("Local actualizado exitosamente.")
                     else:
