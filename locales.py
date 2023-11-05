@@ -44,8 +44,12 @@ class Local():
             with conexion.cursor() as cursor:
                 consulta = "SELECT * FROM locales WHERE nombre_local = %s;"
                 cursor.execute(consulta, (nombre_local,))
-            conexion.commit()
-            return True
+                local = cursor.fetchone()
+                if local:
+                    print("Local encontrado:")
+                    print("Nombre del local:", local[0])
+                else:
+                    print("Local no encontrado.")
         except psycopg2.Error as e:
             print("Ocurrió un error al buscar el local: ", e)
             return False
@@ -57,16 +61,16 @@ class Local():
                 local = cursor.fetchone()
                 if local:
                     print("Local encontrado: ")
-                    print(local)
+                    print("Nombre local:", local[0])
 
-                    cambios = {}
-                    cambios["nuevo_nombre_local"] = input("Nombre local a modificar: ")
+                    cambiosLocal = {}
+                    cambiosLocal["nuevo_nombre_local"] = input("Nuevo nombre del local: ")
 
                     confirmacion = input("¿Desea aplicar estos cambios? (S/N): ").strip().lower()
 
                     if confirmacion == "s":
                         with conexion.cursor() as cursor:
-                            cursor.execute("UPDATE locales SET nombre_local = %s WHERE nombre_local = %s", cambios["nuevo_nombre_local"])
+                            cursor.execute("UPDATE locales SET nombre_local = %s WHERE nombre_local = %s", cambiosLocal["nuevo_nombre_local"], nombre_local)
                             conexion.commit()
                         print("Local actualizado exitosamente.")
                     else:

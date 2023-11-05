@@ -29,6 +29,10 @@ def mostrar_menu():
     print("6. Iniciar sesión")
     print("7. Cerrar conexión")
     print("8. Crear local")
+    print("9. Leer locales")
+    print("10. Eliminar local")
+    print("11. Buscar local")
+    print("12. Actualizar local")
     print("0. Salir")
     opcion = input("Seleccione una opción: ")
     return opcion
@@ -102,15 +106,39 @@ if __name__ == "__main__":
             else:
                 print("No hay conexión abierta.")
             
-        elif opcion == "7":
+        elif opcion == "8":
             if conexion is not None:
                 nombre_local = input("Nombre del local: ")
                 local1.crearLocal(conexion, nombre_local)
+            else:
+                print("No se pudo crear el local.")
 
-        elif opcion == "8":
+        elif opcion == "9":
+            if conexion is not None:
+                local1.leerLocales(conexion)
+            else:
+                print("No se pudo mostrar los locales.")
+
+        elif opcion == "10":
             if conexion is not None:
                 nombre_local = input("Nombre del local a eliminar: ")
                 local1.eliminarLocal(conexion, nombre_local)
+            else:
+                print("No se pudo eliminar el local.")
+
+        elif opcion == "11":
+            if conexion is not None:
+                nombre_local = input("Nombre del local a buscar: ")
+                local1.buscarLocal(conexion, nombre_local)
+            else:
+                print("No se pudo encontrar el local.")
+
+        elif opcion == "12":
+            if conexion is not None:
+                nuevo_nombre_local = input("Nombre del local a actualizar: ")
+                local1.actualizarLocal(conexion, nuevo_nombre_local)
+            else:
+                print("No se pudo eliminar el local.")
 
         elif opcion == "0":
             if conexion is not None:
