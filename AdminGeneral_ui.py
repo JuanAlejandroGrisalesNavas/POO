@@ -53,8 +53,15 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton{\n"
-"background-color: rgb(91, 91, 91);\n"
+"background-color: rgb(101, 101, 101);\n"
 "border-radius: 20px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"background-color: rgb(155,155,155);\n"
+"border-radius: 20px;\n"
+"color:  rgb(230,230,230);\n"
+"font: 75 15pt \"Yu Gothic UI Semibold\";\n"
 "}\n"
 "\n"
 "")
@@ -78,6 +85,7 @@ class Ui_MainWindow(object):
 
         self.Reloj = QDateTimeEdit(self.frame_superior)
         self.Reloj.setObjectName(u"Reloj")
+        self.Reloj.setStyleSheet(u"background-color: rgb(255, 255, 255);")
 
         self.horizontalLayout.addWidget(self.Reloj)
 
@@ -126,6 +134,7 @@ class Ui_MainWindow(object):
 
         self.frame_inferior = QFrame(self.frame)
         self.frame_inferior.setObjectName(u"frame_inferior")
+        self.frame_inferior.setStyleSheet(u"")
         self.frame_inferior.setFrameShape(QFrame.StyledPanel)
         self.frame_inferior.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_2 = QHBoxLayout(self.frame_inferior)
@@ -139,19 +148,18 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton{\n"
-"	background-color: rgb(91, 91, 91);\n"
-"	border-top-left-radius: 20px;\n"
-"	border-bottom-left-radius: 20px;\n"
+"	background-color: rgb(101, 101, 101);\n"
+"	border-radius: 20px;\n"
 "	color: rgb(230,230,230);\n"
 "	font: 75 15pt \"Yu Gothic UI Semibold\";\n"
 "}\n"
 "\n"
-"QpushButtom: hover{\n"
-"	background-color: black;\n"
-"	border-top-left-radius: 20px;\n"
-"	border-bottom-left-radius: 20px;\n"
-"	color: rgb(255,255,255);\n"
-"	font: 75 15pt \"Yu Gothic UI Semibold\";\n"
+"\n"
+"QPushButton:hover{\n"
+"background-color: rgb(155,155,155);\n"
+"border-radius: 20px;\n"
+"color:  rgb(230,230,230);\n"
+"font: 75 15pt \"Yu Gothic UI Semibold\";\n"
 "}\n"
 "\n"
 "")
@@ -187,12 +195,12 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_3.addWidget(self.Boton_pedidos)
 
-        self.Boton_mesas = QPushButton(self.frame_control)
-        self.Boton_mesas.setObjectName(u"Boton_mesas")
-        self.Boton_mesas.setMinimumSize(QSize(0, 80))
-        self.Boton_mesas.setStyleSheet(u"")
+        self.Boton_productos = QPushButton(self.frame_control)
+        self.Boton_productos.setObjectName(u"Boton_productos")
+        self.Boton_productos.setMinimumSize(QSize(0, 80))
+        self.Boton_productos.setStyleSheet(u"")
 
-        self.verticalLayout_3.addWidget(self.Boton_mesas)
+        self.verticalLayout_3.addWidget(self.Boton_productos)
 
         self.Boton_cerrarAbrirDia = QPushButton(self.frame_control)
         self.Boton_cerrarAbrirDia.setObjectName(u"Boton_cerrarAbrirDia")
@@ -214,7 +222,7 @@ class Ui_MainWindow(object):
         self.frame_contenido = QFrame(self.frame_inferior)
         self.frame_contenido.setObjectName(u"frame_contenido")
         self.frame_contenido.setStyleSheet(u"QFrame{\n"
-"background-color: rgb(91,91,91);\n"
+"background-color: rgb(101, 101, 101);\n"
 "}\n"
 "\n"
 "QLabel{\n"
@@ -232,22 +240,22 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QPushButton{\n"
-"background-color: rgb(91,91,91);\n"
+"background-color: rgb(201, 201, 201);\n"
 "border-radius: 15px;\n"
 "color:  rgb(10,10,10);\n"
 "font: 75 15pt \"Yu Gothic UI Semibold\";\n"
 "\n"
 "}\n"
 "QPushButton:hover{\n"
-"background-color: rgb(255,255,255);\n"
+"background-color: rgb(155,155,155);\n"
 "border-radius: 15px;\n"
 "color:  rgb(230,230,230);\n"
 "font: 75 15pt \"Yu Gothic UI Semibold\";\n"
 "}\n"
 "\n"
 "QTableWidget{\n"
-"background-color: rgb(130,130,130);\n"
-"color:  rgb(240,240,240);\n"
+"background-color: rgb(255,255,255);\n"
+"color:  rgb(230,230,230);\n"
 "grindline-color: rgb(255,255,255);\n"
 "font-size: 12pt;\n"
 "color: #000000;\n"
@@ -257,11 +265,11 @@ class Ui_MainWindow(object):
 "background-color: rgb(255,255,255);\n"
 "border:1px solid rgb(10,10,10);\n"
 "font-size: 12pt;\n"
-"}\n"
-"\n"
 ""
-                        "QTableWindget QTableCornerButtom::section{\n"
-"background-color: rgb(150,150,150);\n"
+                        "}\n"
+"\n"
+"QTableWindget QTableCornerButtom::section{\n"
+"background-color: rgb(205,205,205);\n"
 "color:  rgb(255,255,255);\n"
 "}\n"
 "")
@@ -372,6 +380,7 @@ class Ui_MainWindow(object):
 
         self.Boton_ConfirmarAgregarUsuario = QPushButton(self.Pagina_AgregarUsuario)
         self.Boton_ConfirmarAgregarUsuario.setObjectName(u"Boton_ConfirmarAgregarUsuario")
+        self.Boton_ConfirmarAgregarUsuario.setMinimumSize(QSize(90, 30))
 
         self.horizontalLayout_6.addWidget(self.Boton_ConfirmarAgregarUsuario)
 
@@ -403,7 +412,7 @@ class Ui_MainWindow(object):
 
         self.Boton_BuscarUsuario_2 = QPushButton(self.Pagina_EliminarUsuario)
         self.Boton_BuscarUsuario_2.setObjectName(u"Boton_BuscarUsuario_2")
-        self.Boton_BuscarUsuario_2.setMinimumSize(QSize(0, 30))
+        self.Boton_BuscarUsuario_2.setMinimumSize(QSize(90, 35))
 
         self.horizontalLayout_10.addWidget(self.Boton_BuscarUsuario_2)
 
@@ -471,6 +480,7 @@ class Ui_MainWindow(object):
 
         self.Boton_BuscarUsuario = QPushButton(self.Pagina_ModificarUsuario)
         self.Boton_BuscarUsuario.setObjectName(u"Boton_BuscarUsuario")
+        self.Boton_BuscarUsuario.setMinimumSize(QSize(90, 35))
 
         self.horizontalLayout_9.addWidget(self.Boton_BuscarUsuario)
 
@@ -564,6 +574,7 @@ class Ui_MainWindow(object):
 
         self.Boton_AceptarModificarUsuario = QPushButton(self.Pagina_ModificarUsuario)
         self.Boton_AceptarModificarUsuario.setObjectName(u"Boton_AceptarModificarUsuario")
+        self.Boton_AceptarModificarUsuario.setMinimumSize(QSize(90, 30))
 
         self.horizontalLayout_7.addWidget(self.Boton_AceptarModificarUsuario)
 
@@ -635,7 +646,7 @@ class Ui_MainWindow(object):
 
         self.Boton_ActualizarBase = QPushButton(self.pagina_ResumenV)
         self.Boton_ActualizarBase.setObjectName(u"Boton_ActualizarBase")
-        self.Boton_ActualizarBase.setMinimumSize(QSize(30, 40))
+        self.Boton_ActualizarBase.setMinimumSize(QSize(100, 40))
 
         self.horizontalLayout_3.addWidget(self.Boton_ActualizarBase)
 
@@ -761,6 +772,7 @@ class Ui_MainWindow(object):
 
         self.Boton_ComfimarProductos = QPushButton(self.Pagina_AgregarProductos)
         self.Boton_ComfimarProductos.setObjectName(u"Boton_ComfimarProductos")
+        self.Boton_ComfimarProductos.setMinimumSize(QSize(90, 30))
 
         self.horizontalLayout_21.addWidget(self.Boton_ComfimarProductos)
 
@@ -792,7 +804,7 @@ class Ui_MainWindow(object):
 
         self.Boton_BuscarProductoEliminar = QPushButton(self.Pagina_EliminarProductos)
         self.Boton_BuscarProductoEliminar.setObjectName(u"Boton_BuscarProductoEliminar")
-        self.Boton_BuscarProductoEliminar.setMinimumSize(QSize(0, 30))
+        self.Boton_BuscarProductoEliminar.setMinimumSize(QSize(90, 35))
 
         self.horizontalLayout_22.addWidget(self.Boton_BuscarProductoEliminar)
 
@@ -860,6 +872,7 @@ class Ui_MainWindow(object):
 
         self.Boton_BuscarProductoModificar = QPushButton(self.Pagina_ModificarProducto)
         self.Boton_BuscarProductoModificar.setObjectName(u"Boton_BuscarProductoModificar")
+        self.Boton_BuscarProductoModificar.setMinimumSize(QSize(90, 35))
 
         self.horizontalLayout_24.addWidget(self.Boton_BuscarProductoModificar)
 
@@ -938,6 +951,7 @@ class Ui_MainWindow(object):
 
         self.Boton_ComfirmarModificarProducto_2 = QPushButton(self.Pagina_ModificarProducto)
         self.Boton_ComfirmarModificarProducto_2.setObjectName(u"Boton_ComfirmarModificarProducto_2")
+        self.Boton_ComfirmarModificarProducto_2.setMinimumSize(QSize(90, 30))
 
         self.horizontalLayout_26.addWidget(self.Boton_ComfirmarModificarProducto_2)
 
@@ -1057,6 +1071,7 @@ class Ui_MainWindow(object):
 
         self.Boton_ComfimarLocal = QPushButton(self.Pagina_AgregarLocal)
         self.Boton_ComfimarLocal.setObjectName(u"Boton_ComfimarLocal")
+        self.Boton_ComfimarLocal.setMinimumSize(QSize(110, 30))
 
         self.horizontalLayout_13.addWidget(self.Boton_ComfimarLocal)
 
@@ -1088,7 +1103,7 @@ class Ui_MainWindow(object):
 
         self.Boton_BuscarLocal = QPushButton(self.Pagina_EliminarLocal)
         self.Boton_BuscarLocal.setObjectName(u"Boton_BuscarLocal")
-        self.Boton_BuscarLocal.setMinimumSize(QSize(0, 30))
+        self.Boton_BuscarLocal.setMinimumSize(QSize(90, 30))
 
         self.horizontalLayout_14.addWidget(self.Boton_BuscarLocal)
 
@@ -1156,6 +1171,7 @@ class Ui_MainWindow(object):
 
         self.Boton_BuscarLocal_2 = QPushButton(self.Pagina_ModificarLocal)
         self.Boton_BuscarLocal_2.setObjectName(u"Boton_BuscarLocal_2")
+        self.Boton_BuscarLocal_2.setMinimumSize(QSize(90, 30))
 
         self.horizontalLayout_16.addWidget(self.Boton_BuscarLocal_2)
 
@@ -1234,6 +1250,7 @@ class Ui_MainWindow(object):
 
         self.Boton_ComfirmarModificarLocal = QPushButton(self.Pagina_ModificarLocal)
         self.Boton_ComfirmarModificarLocal.setObjectName(u"Boton_ComfirmarModificarLocal")
+        self.Boton_ComfirmarModificarLocal.setMinimumSize(QSize(90, 30))
 
         self.horizontalLayout_18.addWidget(self.Boton_ComfirmarModificarLocal)
 
@@ -1287,8 +1304,8 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
 
         self.stacked_Menu.setCurrentIndex(3)
-        self.stacked_PaginaUuario.setCurrentIndex(0)
-        self.stacked_PaginaProductos.setCurrentIndex(2)
+        self.stacked_PaginaUuario.setCurrentIndex(1)
+        self.stacked_PaginaProductos.setCurrentIndex(1)
         self.stacked_PaginaLocal.setCurrentIndex(1)
 
 
@@ -1306,7 +1323,7 @@ class Ui_MainWindow(object):
         self.Boton_locales.setText(QCoreApplication.translate("MainWindow", u"Locales", None))
         self.Boton_resumenVentas.setText(QCoreApplication.translate("MainWindow", u"Resumen Ventas", None))
         self.Boton_pedidos.setText(QCoreApplication.translate("MainWindow", u"Pedidos", None))
-        self.Boton_mesas.setText(QCoreApplication.translate("MainWindow", u"Productos", None))
+        self.Boton_productos.setText(QCoreApplication.translate("MainWindow", u"Productos", None))
         self.Boton_cerrarAbrirDia.setText(QCoreApplication.translate("MainWindow", u"Abrir/Cerrar Dia", None))
         self.Boton_cerrarSesion.setText(QCoreApplication.translate("MainWindow", u"Cerrar Sesion", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"AGREGAR USUARIOS", None))
@@ -1315,10 +1332,10 @@ class Ui_MainWindow(object):
         self.Label_ContrasenaUsuario.setText(QCoreApplication.translate("MainWindow", u"Contrase\u00f1a", None))
         self.Label_CodigoUsuario.setText(QCoreApplication.translate("MainWindow", u"Codigo", None))
         self.label_6.setText("")
-        self.Boton_ConfirmarAgregarUsuario.setText(QCoreApplication.translate("MainWindow", u"Confirmar", None))
+        self.Boton_ConfirmarAgregarUsuario.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
         self.label_EliminarUsuario.setText(QCoreApplication.translate("MainWindow", u"ELIMINAR USUARIO", None))
-        self.Label_NombreEliminarUsuario.setText(QCoreApplication.translate("MainWindow", u"NOMBRE", None))
-        self.Boton_BuscarUsuario_2.setText(QCoreApplication.translate("MainWindow", u"BUSCAR", None))
+        self.Label_NombreEliminarUsuario.setText(QCoreApplication.translate("MainWindow", u"Nombre", None))
+        self.Boton_BuscarUsuario_2.setText(QCoreApplication.translate("MainWindow", u"Buscar", None))
         ___qtablewidgetitem = self.tabla_eliminarUsuario.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Nombre", None));
         ___qtablewidgetitem1 = self.tabla_eliminarUsuario.horizontalHeaderItem(1)
@@ -1360,10 +1377,10 @@ class Ui_MainWindow(object):
         self.label_NombreProducto.setText(QCoreApplication.translate("MainWindow", u"Nombre", None))
         self.label_LocalPertenece.setText(QCoreApplication.translate("MainWindow", u"Local Pertenece", None))
         self.label_26.setText("")
-        self.Boton_ComfimarProductos.setText(QCoreApplication.translate("MainWindow", u"Comfirmar", None))
+        self.Boton_ComfimarProductos.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
         self.label_Eliimar.setText(QCoreApplication.translate("MainWindow", u"ELIMINAR LOCAL", None))
         self.label_NombreProductoEliminar.setText(QCoreApplication.translate("MainWindow", u"Nombre", None))
-        self.Boton_BuscarProductoEliminar.setText(QCoreApplication.translate("MainWindow", u"BUSCAR", None))
+        self.Boton_BuscarProductoEliminar.setText(QCoreApplication.translate("MainWindow", u"Buscar", None))
         ___qtablewidgetitem8 = self.tabla_EliminarLocal_2.horizontalHeaderItem(0)
         ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Nombre", None));
         ___qtablewidgetitem9 = self.tabla_EliminarLocal_2.horizontalHeaderItem(1)
@@ -1379,7 +1396,7 @@ class Ui_MainWindow(object):
         self.label_NombreModificarProducto.setText(QCoreApplication.translate("MainWindow", u"Nombre", None))
         self.label_LocalPerteneceModificarProducto.setText(QCoreApplication.translate("MainWindow", u"Tipo Comida", None))
         self.label_36.setText("")
-        self.Boton_ComfirmarModificarProducto_2.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
+        self.Boton_ComfirmarModificarProducto_2.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
         self.Boton_CerrarSesion.setText(QCoreApplication.translate("MainWindow", u"CERRAR SESION", None))
         self.Boton_ComfirmarCerrarSesion.setText(QCoreApplication.translate("MainWindow", u"COMFIRMAR", None))
         self.Boton_AbrirDia.setText(QCoreApplication.translate("MainWindow", u"ABRIR DIA ", None))
@@ -1409,7 +1426,7 @@ class Ui_MainWindow(object):
         self.label_NombreModificarLocal.setText(QCoreApplication.translate("MainWindow", u"Nombre", None))
         self.label_TipoComidaModificarLocal.setText(QCoreApplication.translate("MainWindow", u"Tipo Comida", None))
         self.label_35.setText("")
-        self.Boton_ComfirmarModificarLocal.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
+        self.Boton_ComfirmarModificarLocal.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
         self.Boton_AgregarLocal.setText(QCoreApplication.translate("MainWindow", u"Agregar", None))
         self.Boton_ModificarLocal.setText(QCoreApplication.translate("MainWindow", u"Modificar", None))
         self.Boton_EliminarLocal_2.setText(QCoreApplication.translate("MainWindow", u"Eliminar", None))
