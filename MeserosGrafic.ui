@@ -413,6 +413,326 @@ color:  rgb(255,255,255);
                <property name="currentIndex">
                 <number>0</number>
                </property>
+               <widget class="QWidget" name="page">
+                <widget class="QWidget" name="layoutWidget_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>20</y>
+                   <width>731</width>
+                   <height>531</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_3">
+                  <property name="sizeConstraint">
+                   <enum>QLayout::SetMinAndMaxSize</enum>
+                  </property>
+                  <item row="0" column="3">
+                   <widget class="QPushButton" name="Mesa3_3">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
+	color: rgb(0,0,0);
+	background-color: rgb(38, 0, 0);
+border-radius: 30px;
+
+}
+QPushButton{
+background-color: rgb(230,230,230);
+	color:rgb(0,0,0)
+
+}
+QPushButton:hover{
+color: rgb(61, 61, 61);
+	background-color: rgb(179, 179, 179);
+
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Producto 3</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QPushButton" name="Mesa2_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
+	color: rgb(0,0,0);
+	background-color: rgb(38, 0, 0);
+border-radius: 30px;
+
+}
+QPushButton{
+background-color: rgb(230,230,230);
+	color:rgb(0,0,0)
+
+}
+QPushButton:hover{
+color: rgb(61, 61, 61);
+	background-color: rgb(179, 179, 179);
+
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Producto 1</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QPushButton" name="Mesa2_5">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
+	color: rgb(0,0,0);
+	background-color: rgb(38, 0, 0);
+border-radius: 30px;
+
+}
+QPushButton{
+background-color: rgb(230,230,230);
+	color:rgb(0,0,0)
+
+}
+QPushButton:hover{
+color: rgb(61, 61, 61);
+	background-color: rgb(179, 179, 179);
+
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Producto 2</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="layoutWidget_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>780</x>
+                   <y>110</y>
+                   <width>311</width>
+                   <height>171</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_4">
+                  <property name="sizeConstraint">
+                   <enum>QLayout::SetMinAndMaxSize</enum>
+                  </property>
+                  <item row="1" column="1">
+                   <widget class="QPushButton" name="Mesa11_3">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
+	color: rgb(0,0,0);
+	background-color: rgb(38, 0, 0);
+border-radius: 30px;
+
+}
+QPushButton{
+background-color: rgb(230,230,230);
+	color:rgb(0,0,0)
+
+}
+QPushButton:hover{
+color: rgb(61, 61, 61);
+	background-color: rgb(179, 179, 179);
+
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>LIBRE</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QPushButton" name="Mesa12_3">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
+	color: rgb(0,0,0);
+	background-color: rgb(38, 0, 0);
+border-radius: 30px;
+
+}
+QPushButton{
+background-color: rgb(230,230,230);
+	color:rgb(0,0,0)
+
+}
+QPushButton:hover{
+color: rgb(61, 61, 61);
+	background-color: rgb(179, 179, 179);
+
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>LIBRE</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QPushButton" name="Mesa7_3">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
+	color: rgb(0,0,0);
+	background-color: rgb(38, 0, 0);
+border-radius: 30px;
+
+}
+QPushButton{
+background-color: rgb(230,230,230);
+	color:rgb(0,0,0)
+
+}
+QPushButton:hover{
+color: rgb(61, 61, 61);
+	background-color: rgb(179, 179, 179);
+
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>LIBRE</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QPushButton" name="Mesa8_3">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
+	color: rgb(0,0,0);
+	background-color: rgb(38, 0, 0);
+border-radius: 30px;
+
+}
+QPushButton{
+background-color: rgb(230,230,230);
+	color:rgb(0,0,0)
+
+}
+QPushButton:hover{
+color: rgb(61, 61, 61);
+	background-color: rgb(179, 179, 179);
+
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>LIBRE</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QPushButton" name="Mesa1_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>860</x>
+                   <y>370</y>
+                   <width>178</width>
+                   <height>172</height>
+                  </rect>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Yu Gothic UI Semibold</family>
+                   <pointsize>15</pointsize>
+                   <italic>false</italic>
+                   <strikeout>false</strikeout>
+                   <stylestrategy>PreferDefault</stylestrategy>
+                   <fontweight></fontweight>
+                  </font>
+                 </property>
+                 <property name="whatsThis">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;libre&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
+	color: rgb(0,0,0);
+	background-color: rgb(38, 0, 0);
+border-radius: 30px;
+
+}
+QPushButton{
+background-color: rgb(230,230,230);
+	color:rgb(0,0,0)
+
+}
+QPushButton:hover{
+color: rgb(61, 61, 61);
+	background-color: rgb(179, 179, 179);
+
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>LIBRE</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../Users/holan/OneDrive/Escritorio/tabla.png</normaloff>../Users/holan/OneDrive/Escritorio/tabla.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>100</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                </widget>
+               </widget>
                <widget class="QWidget" name="Pagina_AgregarUsuario">
                 <layout class="QVBoxLayout" name="verticalLayout_8">
                  <item>
@@ -1163,12 +1483,12 @@ color: rgb(61, 61, 61);
                     <widget class="QPushButton" name="Boton_AceptarModificarUsuario">
                      <property name="minimumSize">
                       <size>
-                       <width>90</width>
-                       <height>30</height>
+                       <width>300</width>
+                       <height>100</height>
                       </size>
                      </property>
                      <property name="text">
-                      <string>Aceptar</string>
+                      <string>SELECCIONAR MESERO</string>
                      </property>
                     </widget>
                    </item>
