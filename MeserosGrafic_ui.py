@@ -254,6 +254,232 @@ class Ui_MainWindow(object):
         self.stacked_PaginaUuario = QStackedWidget(self.pagina_usuarios)
         self.stacked_PaginaUuario.setObjectName(u"stacked_PaginaUuario")
         self.stacked_PaginaUuario.setGeometry(QRect(10, 150, 1131, 571))
+        self.page = QWidget()
+        self.page.setObjectName(u"page")
+        self.layoutWidget_2 = QWidget(self.page)
+        self.layoutWidget_2.setObjectName(u"layoutWidget_2")
+        self.layoutWidget_2.setGeometry(QRect(10, 20, 731, 531))
+        self.gridLayout_3 = QGridLayout(self.layoutWidget_2)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.gridLayout_3.setSizeConstraint(QLayout.SetMinAndMaxSize)
+        self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.Mesa3_3 = QPushButton(self.layoutWidget_2)
+        self.Mesa3_3.setObjectName(u"Mesa3_3")
+        sizePolicy = QSizePolicy(QSizePolicy.MinimumExpanding, QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.Mesa3_3.sizePolicy().hasHeightForWidth())
+        self.Mesa3_3.setSizePolicy(sizePolicy)
+        self.Mesa3_3.setStyleSheet(u"QPushButton{\n"
+"font: 75 15pt \"Yu Gothic UI Semibold\";\n"
+"	color: rgb(0,0,0);\n"
+"	background-color: rgb(38, 0, 0);\n"
+"border-radius: 30px;\n"
+"\n"
+"}\n"
+"QPushButton{\n"
+"background-color: rgb(230,230,230);\n"
+"	color:rgb(0,0,0)\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"color: rgb(61, 61, 61);\n"
+"	background-color: rgb(179, 179, 179);\n"
+"\n"
+"}")
+
+        self.gridLayout_3.addWidget(self.Mesa3_3, 0, 3, 1, 1)
+
+        self.Mesa2_4 = QPushButton(self.layoutWidget_2)
+        self.Mesa2_4.setObjectName(u"Mesa2_4")
+        sizePolicy.setHeightForWidth(self.Mesa2_4.sizePolicy().hasHeightForWidth())
+        self.Mesa2_4.setSizePolicy(sizePolicy)
+        self.Mesa2_4.setStyleSheet(u"QPushButton{\n"
+"font: 75 15pt \"Yu Gothic UI Semibold\";\n"
+"	color: rgb(0,0,0);\n"
+"	background-color: rgb(38, 0, 0);\n"
+"border-radius: 30px;\n"
+"\n"
+"}\n"
+"QPushButton{\n"
+"background-color: rgb(230,230,230);\n"
+"	color:rgb(0,0,0)\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"color: rgb(61, 61, 61);\n"
+"	background-color: rgb(179, 179, 179);\n"
+"\n"
+"}")
+
+        self.gridLayout_3.addWidget(self.Mesa2_4, 0, 1, 1, 1)
+
+        self.Mesa2_5 = QPushButton(self.layoutWidget_2)
+        self.Mesa2_5.setObjectName(u"Mesa2_5")
+        sizePolicy.setHeightForWidth(self.Mesa2_5.sizePolicy().hasHeightForWidth())
+        self.Mesa2_5.setSizePolicy(sizePolicy)
+        self.Mesa2_5.setStyleSheet(u"QPushButton{\n"
+"font: 75 15pt \"Yu Gothic UI Semibold\";\n"
+"	color: rgb(0,0,0);\n"
+"	background-color: rgb(38, 0, 0);\n"
+"border-radius: 30px;\n"
+"\n"
+"}\n"
+"QPushButton{\n"
+"background-color: rgb(230,230,230);\n"
+"	color:rgb(0,0,0)\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"color: rgb(61, 61, 61);\n"
+"	background-color: rgb(179, 179, 179);\n"
+"\n"
+"}")
+
+        self.gridLayout_3.addWidget(self.Mesa2_5, 0, 2, 1, 1)
+
+        self.layoutWidget_3 = QWidget(self.page)
+        self.layoutWidget_3.setObjectName(u"layoutWidget_3")
+        self.layoutWidget_3.setGeometry(QRect(780, 110, 311, 171))
+        self.gridLayout_4 = QGridLayout(self.layoutWidget_3)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setSizeConstraint(QLayout.SetMinAndMaxSize)
+        self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.Mesa11_3 = QPushButton(self.layoutWidget_3)
+        self.Mesa11_3.setObjectName(u"Mesa11_3")
+        sizePolicy.setHeightForWidth(self.Mesa11_3.sizePolicy().hasHeightForWidth())
+        self.Mesa11_3.setSizePolicy(sizePolicy)
+        self.Mesa11_3.setStyleSheet(u"QPushButton{\n"
+"font: 75 15pt \"Yu Gothic UI Semibold\";\n"
+"	color: rgb(0,0,0);\n"
+"	background-color: rgb(38, 0, 0);\n"
+"border-radius: 30px;\n"
+"\n"
+"}\n"
+"QPushButton{\n"
+"background-color: rgb(230,230,230);\n"
+"	color:rgb(0,0,0)\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"color: rgb(61, 61, 61);\n"
+"	background-color: rgb(179, 179, 179);\n"
+"\n"
+"}")
+
+        self.gridLayout_4.addWidget(self.Mesa11_3, 1, 1, 1, 1)
+
+        self.Mesa12_3 = QPushButton(self.layoutWidget_3)
+        self.Mesa12_3.setObjectName(u"Mesa12_3")
+        sizePolicy.setHeightForWidth(self.Mesa12_3.sizePolicy().hasHeightForWidth())
+        self.Mesa12_3.setSizePolicy(sizePolicy)
+        self.Mesa12_3.setStyleSheet(u"QPushButton{\n"
+"font: 75 15pt \"Yu Gothic UI Semibold\";\n"
+"	color: rgb(0,0,0);\n"
+"	background-color: rgb(38, 0, 0);\n"
+"border-radius: 30px;\n"
+"\n"
+"}\n"
+"QPushButton{\n"
+"background-color: rgb(230,230,230);\n"
+"	color:rgb(0,0,0)\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"color: rgb(61, 61, 61);\n"
+"	background-color: rgb(179, 179, 179);\n"
+"\n"
+"}")
+
+        self.gridLayout_4.addWidget(self.Mesa12_3, 1, 2, 1, 1)
+
+        self.Mesa7_3 = QPushButton(self.layoutWidget_3)
+        self.Mesa7_3.setObjectName(u"Mesa7_3")
+        sizePolicy.setHeightForWidth(self.Mesa7_3.sizePolicy().hasHeightForWidth())
+        self.Mesa7_3.setSizePolicy(sizePolicy)
+        self.Mesa7_3.setStyleSheet(u"QPushButton{\n"
+"font: 75 15pt \"Yu Gothic UI Semibold\";\n"
+"	color: rgb(0,0,0);\n"
+"	background-color: rgb(38, 0, 0);\n"
+"border-radius: 30px;\n"
+"\n"
+"}\n"
+"QPushButton{\n"
+"background-color: rgb(230,230,230);\n"
+"	color:rgb(0,0,0)\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"color: rgb(61, 61, 61);\n"
+"	background-color: rgb(179, 179, 179);\n"
+"\n"
+"}")
+
+        self.gridLayout_4.addWidget(self.Mesa7_3, 0, 1, 1, 1)
+
+        self.Mesa8_3 = QPushButton(self.layoutWidget_3)
+        self.Mesa8_3.setObjectName(u"Mesa8_3")
+        sizePolicy.setHeightForWidth(self.Mesa8_3.sizePolicy().hasHeightForWidth())
+        self.Mesa8_3.setSizePolicy(sizePolicy)
+        self.Mesa8_3.setStyleSheet(u"QPushButton{\n"
+"font: 75 15pt \"Yu Gothic UI Semibold\";\n"
+"	color: rgb(0,0,0);\n"
+"	background-color: rgb(38, 0, 0);\n"
+"border-radius: 30px;\n"
+"\n"
+"}\n"
+"QPushButton{\n"
+"background-color: rgb(230,230,230);\n"
+"	color:rgb(0,0,0)\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"color: rgb(61, 61, 61);\n"
+"	background-color: rgb(179, 179, 179);\n"
+"\n"
+"}")
+
+        self.gridLayout_4.addWidget(self.Mesa8_3, 0, 2, 1, 1)
+
+        self.Mesa1_3 = QPushButton(self.page)
+        self.Mesa1_3.setObjectName(u"Mesa1_3")
+        self.Mesa1_3.setGeometry(QRect(860, 370, 178, 172))
+        sizePolicy1 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Minimum)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.Mesa1_3.sizePolicy().hasHeightForWidth())
+        self.Mesa1_3.setSizePolicy(sizePolicy1)
+        font = QFont()
+        font.setFamilies([u"Yu Gothic UI Semibold"])
+        font.setPointSize(15)
+        font.setWeight(QFont.)
+        font.setItalic(False)
+        font.setStrikeOut(False)
+        font.setStyleStrategy(QFont.PreferDefault)
+        self.Mesa1_3.setFont(font)
+        self.Mesa1_3.setLayoutDirection(Qt.LeftToRight)
+        self.Mesa1_3.setStyleSheet(u"QPushButton{\n"
+"font: 75 15pt \"Yu Gothic UI Semibold\";\n"
+"	color: rgb(0,0,0);\n"
+"	background-color: rgb(38, 0, 0);\n"
+"border-radius: 30px;\n"
+"\n"
+"}\n"
+"QPushButton{\n"
+"background-color: rgb(230,230,230);\n"
+"	color:rgb(0,0,0)\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"color: rgb(61, 61, 61);\n"
+"	background-color: rgb(179, 179, 179);\n"
+"\n"
+"}")
+        icon5 = QIcon()
+        icon5.addFile(u"../Users/holan/OneDrive/Escritorio/tabla.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.Mesa1_3.setIcon(icon5)
+        self.Mesa1_3.setIconSize(QSize(100, 100))
+        self.stacked_PaginaUuario.addWidget(self.page)
         self.Pagina_AgregarUsuario = QWidget()
         self.Pagina_AgregarUsuario.setObjectName(u"Pagina_AgregarUsuario")
         self.verticalLayout_8 = QVBoxLayout(self.Pagina_AgregarUsuario)
@@ -274,9 +500,6 @@ class Ui_MainWindow(object):
         self.gridLayout_2.setSizeConstraint(QLayout.SetMinAndMaxSize)
         self.Mesa2_3 = QPushButton(self.Pagina_AgregarUsuario)
         self.Mesa2_3.setObjectName(u"Mesa2_3")
-        sizePolicy = QSizePolicy(QSizePolicy.MinimumExpanding, QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.Mesa2_3.sizePolicy().hasHeightForWidth())
         self.Mesa2_3.setSizePolicy(sizePolicy)
         self.Mesa2_3.setStyleSheet(u"QPushButton{\n"
@@ -488,18 +711,8 @@ class Ui_MainWindow(object):
 
         self.Mesa1 = QPushButton(self.Pagina_Mesas)
         self.Mesa1.setObjectName(u"Mesa1")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Minimum)
-        sizePolicy1.setHorizontalStretch(0)
-        sizePolicy1.setVerticalStretch(0)
         sizePolicy1.setHeightForWidth(self.Mesa1.sizePolicy().hasHeightForWidth())
         self.Mesa1.setSizePolicy(sizePolicy1)
-        font = QFont()
-        font.setFamilies([u"Yu Gothic UI Semibold"])
-        font.setPointSize(15)
-        font.setWeight(QFont.)
-        font.setItalic(False)
-        font.setStrikeOut(False)
-        font.setStyleStrategy(QFont.PreferDefault)
         self.Mesa1.setFont(font)
         self.Mesa1.setLayoutDirection(Qt.LeftToRight)
         self.Mesa1.setStyleSheet(u"QPushButton{\n"
@@ -519,8 +732,6 @@ class Ui_MainWindow(object):
 "	background-color: rgb(179, 179, 179);\n"
 "\n"
 "}")
-        icon5 = QIcon()
-        icon5.addFile(u"../Users/holan/OneDrive/Escritorio/tabla.png", QSize(), QIcon.Normal, QIcon.Off)
         self.Mesa1.setIcon(icon5)
         self.Mesa1.setIconSize(QSize(100, 100))
 
@@ -789,7 +1000,7 @@ class Ui_MainWindow(object):
 
         self.Boton_AceptarModificarUsuario = QPushButton(self.Pagina_SeleccionMesero)
         self.Boton_AceptarModificarUsuario.setObjectName(u"Boton_AceptarModificarUsuario")
-        self.Boton_AceptarModificarUsuario.setMinimumSize(QSize(90, 30))
+        self.Boton_AceptarModificarUsuario.setMinimumSize(QSize(300, 100))
 
         self.horizontalLayout_7.addWidget(self.Boton_AceptarModificarUsuario)
 
@@ -861,6 +1072,17 @@ class Ui_MainWindow(object):
         self.Boton_cerrar.setText("")
         self.Boton_resumenVentas.setText(QCoreApplication.translate("MainWindow", u"ATRAS", None))
         self.Boton_cerrarSesion.setText(QCoreApplication.translate("MainWindow", u"COMFIRMAR PEDIDO", None))
+        self.Mesa3_3.setText(QCoreApplication.translate("MainWindow", u"Producto 3", None))
+        self.Mesa2_4.setText(QCoreApplication.translate("MainWindow", u"Producto 1", None))
+        self.Mesa2_5.setText(QCoreApplication.translate("MainWindow", u"Producto 2", None))
+        self.Mesa11_3.setText(QCoreApplication.translate("MainWindow", u"LIBRE", None))
+        self.Mesa12_3.setText(QCoreApplication.translate("MainWindow", u"LIBRE", None))
+        self.Mesa7_3.setText(QCoreApplication.translate("MainWindow", u"LIBRE", None))
+        self.Mesa8_3.setText(QCoreApplication.translate("MainWindow", u"LIBRE", None))
+#if QT_CONFIG(whatsthis)
+        self.Mesa1_3.setWhatsThis(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"justify\">libre</p></body></html>", None))
+#endif // QT_CONFIG(whatsthis)
+        self.Mesa1_3.setText(QCoreApplication.translate("MainWindow", u"LIBRE", None))
         self.Mesa2_3.setText(QCoreApplication.translate("MainWindow", u"Restaurante 1", None))
         self.Mesa3_2.setText(QCoreApplication.translate("MainWindow", u"Restaurante 3", None))
         self.Mesa2_2.setText(QCoreApplication.translate("MainWindow", u"Restaurante 2", None))
@@ -886,7 +1108,7 @@ class Ui_MainWindow(object):
         self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
         self.label_14.setText("")
         self.label_3.setText("")
-        self.Boton_AceptarModificarUsuario.setText(QCoreApplication.translate("MainWindow", u"Aceptar", None))
+        self.Boton_AceptarModificarUsuario.setText(QCoreApplication.translate("MainWindow", u"SELECCIONAR MESERO", None))
         self.Boton_AgregarUsuario.setText(QCoreApplication.translate("MainWindow", u"MESAS", None))
         self.Boton_ModificaUsuario.setText(QCoreApplication.translate("MainWindow", u"RESTAURANTES", None))
         self.Boton_ModificaUsuario_2.setText(QCoreApplication.translate("MainWindow", u"COMIDA", None))
