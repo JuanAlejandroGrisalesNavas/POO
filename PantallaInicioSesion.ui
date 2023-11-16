@@ -1,364 +1,197 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>1450</width>
-    <height>808</height>
-   </rect>
-  </property>
-  <property name="sizePolicy">
-   <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
-    <horstretch>0</horstretch>
-    <verstretch>0</verstretch>
-   </sizepolicy>
-  </property>
-  <property name="windowTitle">
-   <string>PantallaInicioSesion</string>
-  </property>
-  <property name="styleSheet">
-   <string notr="true">background-color: rgb(10, 101, 112);</string>
-  </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="imagen4">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>0</y>
-      <width>381</width>
-      <height>381</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image: url(:/Login/AdobeStock_621193540.png)</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="imagen5">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>0</y>
-      <width>381</width>
-      <height>381</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image: url(:/Login/AdobeStock_621193540.png)</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="imagen6">
-    <property name="geometry">
-     <rect>
-      <x>770</x>
-      <y>380</y>
-      <width>391</width>
-      <height>391</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image: url(:/Login/AdobeStock_621193540.png)</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="imagen7">
-    <property name="geometry">
-     <rect>
-      <x>1150</x>
-      <y>370</y>
-      <width>381</width>
-      <height>401</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image: url(:/Login/AdobeStock_621193540.png)</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="imagen8">
-    <property name="geometry">
-     <rect>
-      <x>1150</x>
-      <y>0</y>
-      <width>381</width>
-      <height>381</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image: url(:/Login/AdobeStock_621193540.png)</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="imagen9">
-    <property name="geometry">
-     <rect>
-      <x>770</x>
-      <y>0</y>
-      <width>381</width>
-      <height>381</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image: url(:/Login/AdobeStock_621193540.png)</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="MostrarContra">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>530</y>
-      <width>141</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;</string>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Mostrar contraseña&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Boton_mostrarContrasena">
-    <property name="geometry">
-     <rect>
-      <x>530</x>
-      <y>540</y>
-      <width>31</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
-	color: rgb(255, 255, 255);
-background-color: rgb(10, 101, 112)
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-border-radius: 15px;
-}
+# -*- coding: utf-8 -*-
 
-QPushButton:hover{
-background-color: rgb(255,255,255)
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-border-radius: 15px;
-}
+################################################################################
+## Form generated from reading UI file 'PantallaInicioSesion.ui'
+##
+## Created by: Qt User Interface Compiler version 6.6.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
 
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_Ingrese_usuario">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>370</y>
-      <width>461</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: 15px;</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="placeholderText">
-     <string>Ingrese Usuario</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_Ingrese_contrasena">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>470</y>
-      <width>451</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: 15px;</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="placeholderText">
-     <string>Ingrese Contraseña</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="imagen10">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>320</y>
-      <width>71</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-color: rgb(255, 255, 255);
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-background-color: #000000ff;
-</string>
-    </property>
-    <property name="text">
-     <string>Usuario</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="imagen">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>380</y>
-      <width>391</width>
-      <height>391</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image: url(:/Login/AdobeStock_621193540.png)</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="imagen2">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>380</y>
-      <width>391</width>
-      <height>391</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image: url(:/Login/AdobeStock_621193540.png)</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="imagen3">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>430</y>
-      <width>101</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-background-color: #000000ff;
-</string>
-    </property>
-    <property name="text">
-     <string>Contraseña</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Boton_Salir">
-    <property name="geometry">
-     <rect>
-      <x>1320</x>
-      <y>710</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QFrame{
-background-color: rgb(10, 101, 112);
-}
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QLabel, QLineEdit, QMainWindow,
+    QPushButton, QSizePolicy, QWidget)
+import imagenes_rc
 
-QPushButton{
-background-color: #000000ff;
-border-radius: 10px;
-}
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(1450, 808)
+        sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.MinimumExpanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
+        MainWindow.setSizePolicy(sizePolicy)
+        MainWindow.setStyleSheet(u"background-color: rgb(10, 101, 112);")
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.imagen4 = QLabel(self.centralwidget)
+        self.imagen4.setObjectName(u"imagen4")
+        self.imagen4.setGeometry(QRect(10, 0, 381, 381))
+        self.imagen4.setStyleSheet(u"image: url(:/Login/AdobeStock_621193540.png)")
+        self.imagen5 = QLabel(self.centralwidget)
+        self.imagen5.setObjectName(u"imagen5")
+        self.imagen5.setGeometry(QRect(390, 0, 381, 381))
+        self.imagen5.setStyleSheet(u"image: url(:/Login/AdobeStock_621193540.png)")
+        self.imagen6 = QLabel(self.centralwidget)
+        self.imagen6.setObjectName(u"imagen6")
+        self.imagen6.setGeometry(QRect(770, 380, 391, 391))
+        self.imagen6.setStyleSheet(u"image: url(:/Login/AdobeStock_621193540.png)")
+        self.imagen7 = QLabel(self.centralwidget)
+        self.imagen7.setObjectName(u"imagen7")
+        self.imagen7.setGeometry(QRect(1150, 370, 381, 401))
+        self.imagen7.setStyleSheet(u"image: url(:/Login/AdobeStock_621193540.png)")
+        self.imagen8 = QLabel(self.centralwidget)
+        self.imagen8.setObjectName(u"imagen8")
+        self.imagen8.setGeometry(QRect(1150, 0, 381, 381))
+        self.imagen8.setStyleSheet(u"image: url(:/Login/AdobeStock_621193540.png)")
+        self.imagen9 = QLabel(self.centralwidget)
+        self.imagen9.setObjectName(u"imagen9")
+        self.imagen9.setGeometry(QRect(770, 0, 381, 381))
+        self.imagen9.setStyleSheet(u"image: url(:/Login/AdobeStock_621193540.png)")
+        self.MostrarContra = QLabel(self.centralwidget)
+        self.MostrarContra.setObjectName(u"MostrarContra")
+        self.MostrarContra.setGeometry(QRect(570, 530, 141, 31))
+        self.MostrarContra.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"font: 75 15pt \"Yu Gothic UI Semibold\";")
+        self.Boton_mostrarContrasena = QPushButton(self.centralwidget)
+        self.Boton_mostrarContrasena.setObjectName(u"Boton_mostrarContrasena")
+        self.Boton_mostrarContrasena.setGeometry(QRect(530, 540, 31, 21))
+        self.Boton_mostrarContrasena.setStyleSheet(u"QPushButton{\n"
+"	color: rgb(255, 255, 255);\n"
+"background-color: rgb(10, 101, 112)\n"
+"font: 75 15pt \"Yu Gothic UI Semibold\";\n"
+"border-radius: 15px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255,255,255)\n"
+"font: 75 15pt \"Yu Gothic UI Semibold\";\n"
+"border-radius: 15px;\n"
+"}\n"
+"\n"
+"")
+        self.lineEdit_Ingrese_usuario = QLineEdit(self.centralwidget)
+        self.lineEdit_Ingrese_usuario.setObjectName(u"lineEdit_Ingrese_usuario")
+        self.lineEdit_Ingrese_usuario.setGeometry(QRect(500, 370, 461, 41))
+        self.lineEdit_Ingrese_usuario.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"border-radius: 15px;")
+        self.lineEdit_Ingrese_usuario.setAlignment(Qt.AlignCenter)
+        self.lineEdit_Ingrese_contrasena = QLineEdit(self.centralwidget)
+        self.lineEdit_Ingrese_contrasena.setObjectName(u"lineEdit_Ingrese_contrasena")
+        self.lineEdit_Ingrese_contrasena.setGeometry(QRect(510, 470, 451, 41))
+        self.lineEdit_Ingrese_contrasena.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"border-radius: 15px;")
+        self.lineEdit_Ingrese_contrasena.setAlignment(Qt.AlignCenter)
+        self.imagen10 = QLabel(self.centralwidget)
+        self.imagen10.setObjectName(u"imagen10")
+        self.imagen10.setGeometry(QRect(520, 320, 71, 31))
+        self.imagen10.setStyleSheet(u"\n"
+"color: rgb(255, 255, 255);\n"
+"font: 75 15pt \"Yu Gothic UI Semibold\";\n"
+"background-color: #000000ff;\n"
+"")
+        self.imagen = QLabel(self.centralwidget)
+        self.imagen.setObjectName(u"imagen")
+        self.imagen.setGeometry(QRect(0, 380, 391, 391))
+        self.imagen.setStyleSheet(u"image: url(:/Login/AdobeStock_621193540.png)")
+        self.imagen2 = QLabel(self.centralwidget)
+        self.imagen2.setObjectName(u"imagen2")
+        self.imagen2.setGeometry(QRect(390, 380, 391, 391))
+        self.imagen2.setStyleSheet(u"image: url(:/Login/AdobeStock_621193540.png)")
+        self.imagen3 = QLabel(self.centralwidget)
+        self.imagen3.setObjectName(u"imagen3")
+        self.imagen3.setGeometry(QRect(520, 430, 101, 31))
+        self.imagen3.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"font: 75 15pt \"Yu Gothic UI Semibold\";\n"
+"background-color: #000000ff;\n"
+"")
+        self.Boton_Salir = QPushButton(self.centralwidget)
+        self.Boton_Salir.setObjectName(u"Boton_Salir")
+        self.Boton_Salir.setGeometry(QRect(1320, 710, 91, 31))
+        self.Boton_Salir.setStyleSheet(u"\n"
+"QFrame{\n"
+"background-color: rgb(10, 101, 112);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"background-color: #000000ff;\n"
+"border-radius: 10px;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"background-color: rgb(100, 101, 112);\n"
+"border-radius: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.Boton_ingresar = QPushButton(self.centralwidget)
+        self.Boton_ingresar.setObjectName(u"Boton_ingresar")
+        self.Boton_ingresar.setGeometry(QRect(700, 600, 81, 31))
+        self.Boton_ingresar.setStyleSheet(u"\n"
+"QFrame{\n"
+"background-color: rgb(10, 101, 112);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"background-color: rgb(100, 101, 112);\n"
+"border-radius: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255,255,255)\n"
+"\n"
+"border-radius: 10px;\n"
+"}\n"
+"\n"
+"")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.imagen2.raise_()
+        self.imagen6.raise_()
+        self.imagen7.raise_()
+        self.imagen8.raise_()
+        self.imagen9.raise_()
+        self.imagen4.raise_()
+        self.imagen5.raise_()
+        self.MostrarContra.raise_()
+        self.Boton_mostrarContrasena.raise_()
+        self.lineEdit_Ingrese_usuario.raise_()
+        self.lineEdit_Ingrese_contrasena.raise_()
+        self.imagen10.raise_()
+        self.imagen.raise_()
+        self.imagen3.raise_()
+        self.Boton_Salir.raise_()
+        self.Boton_ingresar.raise_()
 
-QPushButton{
-background-color: rgb(100, 101, 112);
-border-radius: 10px;
-}
+        self.retranslateUi(MainWindow)
 
-</string>
-    </property>
-    <property name="text">
-     <string>SALIR</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Boton_ingresar">
-    <property name="geometry">
-     <rect>
-      <x>700</x>
-      <y>600</y>
-      <width>81</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QFrame{
-background-color: rgb(10, 101, 112);
-}
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
 
-QPushButton{
-background-color: rgb(100, 101, 112);
-border-radius: 10px;
-}
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"PantallaInicioSesion", None))
+        self.imagen4.setText("")
+        self.imagen5.setText("")
+        self.imagen6.setText("")
+        self.imagen7.setText("")
+        self.imagen8.setText("")
+        self.imagen9.setText("")
+        self.MostrarContra.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:12pt;\">Mostrar contrase\u00f1a</span></p></body></html>", None))
+        self.Boton_mostrarContrasena.setText("")
+        self.lineEdit_Ingrese_usuario.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Ingrese Usuario", None))
+        self.lineEdit_Ingrese_contrasena.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Ingrese Contrase\u00f1a", None))
+        self.imagen10.setText(QCoreApplication.translate("MainWindow", u"Usuario", None))
+        self.imagen.setText("")
+        self.imagen2.setText("")
+        self.imagen3.setText(QCoreApplication.translate("MainWindow", u"Contrase\u00f1a", None))
+        self.Boton_Salir.setText(QCoreApplication.translate("MainWindow", u"SALIR", None))
+        self.Boton_ingresar.setText(QCoreApplication.translate("MainWindow", u"INGRESAR", None))
+    # retranslateUi
 
-QPushButton:hover{
-background-color: rgb(255,255,255)
-
-border-radius: 10px;
-}
-
-</string>
-    </property>
-    <property name="text">
-     <string>INGRESAR</string>
-    </property>
-   </widget>
-   <zorder>imagen2</zorder>
-   <zorder>imagen6</zorder>
-   <zorder>imagen7</zorder>
-   <zorder>imagen8</zorder>
-   <zorder>imagen9</zorder>
-   <zorder>imagen4</zorder>
-   <zorder>imagen5</zorder>
-   <zorder>MostrarContra</zorder>
-   <zorder>Boton_mostrarContrasena</zorder>
-   <zorder>lineEdit_Ingrese_usuario</zorder>
-   <zorder>lineEdit_Ingrese_contrasena</zorder>
-   <zorder>imagen10</zorder>
-   <zorder>imagen</zorder>
-   <zorder>imagen3</zorder>
-   <zorder>Boton_Salir</zorder>
-   <zorder>Boton_ingresar</zorder>
-  </widget>
- </widget>
- <resources>
-  <include location="../Imagenes/imagenes.qrc"/>
- </resources>
- <connections/>
-</ui>
