@@ -6,58 +6,67 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1583</width>
-    <height>842</height>
+    <width>1513</width>
+    <height>847</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QFrame" name="frame">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1581</width>
-      <height>841</height>
-     </rect>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(10, 101, 112);</string>
+    <property name="leftMargin">
+     <number>0</number>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
+    <property name="topMargin">
+     <number>0</number>
     </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
+    <property name="rightMargin">
+     <number>0</number>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,9">
-     <property name="spacing">
-      <number>0</number>
-     </property>
-     <property name="leftMargin">
-      <number>0</number>
-     </property>
-     <property name="topMargin">
-      <number>0</number>
-     </property>
-     <property name="rightMargin">
-      <number>0</number>
-     </property>
-     <property name="bottomMargin">
-      <number>0</number>
-     </property>
-     <item>
-      <widget class="QFrame" name="frame_superior">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>42</height>
-        </size>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(10, 101, 112);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,9">
+       <property name="spacing">
+        <number>0</number>
        </property>
-       <property name="styleSheet">
-        <string notr="true">QFrame{
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_superior">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>42</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
 background-color: rgb(255,255,255);
 }
 
@@ -79,180 +88,180 @@ font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
 }
 
 </string>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <item>
-         <widget class="QPushButton" name="Boton_menu">
-          <property name="minimumSize">
-           <size>
-            <width>400</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="icon">
-           <iconset>
-            <normaloff>../Imagenes/menu (1).png</normaloff>../Imagenes/menu (1).png</iconset>
-          </property>
-          <property name="iconSize">
-           <size>
-            <width>30</width>
-            <height>30</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <spacer name="horizontalSpace_FrameSup">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>943</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <widget class="QDateTimeEdit" name="Reloj">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255);</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="Boton_minimizar">
-          <property name="minimumSize">
-           <size>
-            <width>40</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="icon">
-           <iconset>
-            <normaloff>../Imagenes/minimizar-signo.png</normaloff>../Imagenes/minimizar-signo.png</iconset>
-          </property>
-          <property name="iconSize">
-           <size>
-            <width>30</width>
-            <height>30</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="Boton_restaurar">
-          <property name="minimumSize">
-           <size>
-            <width>40</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="icon">
-           <iconset>
-            <normaloff>../Imagenes/minimizar.png</normaloff>../Imagenes/minimizar.png</iconset>
-          </property>
-          <property name="iconSize">
-           <size>
-            <width>30</width>
-            <height>30</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="Boton_maximizar">
-          <property name="minimumSize">
-           <size>
-            <width>40</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="icon">
-           <iconset>
-            <normaloff>../Imagenes/maximizar.png</normaloff>../Imagenes/maximizar.png</iconset>
-          </property>
-          <property name="iconSize">
-           <size>
-            <width>30</width>
-            <height>30</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="Boton_cerrar">
-          <property name="minimumSize">
-           <size>
-            <width>40</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="icon">
-           <iconset>
-            <normaloff>../Imagenes/cerrar.png</normaloff>../Imagenes/cerrar.png</iconset>
-          </property>
-          <property name="iconSize">
-           <size>
-            <width>30</width>
-            <height>30</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     </item>
-     <item>
-      <widget class="QFrame" name="frame_inferior">
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
-        <item>
-         <widget class="QFrame" name="frame_control">
-          <property name="minimumSize">
-           <size>
-            <width>400</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>0</width>
-            <height>16777215</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QFrame{
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="Boton_menu">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../Imagenes/menu (1).png</normaloff>../Imagenes/menu (1).png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpace_FrameSup">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>943</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QDateTimeEdit" name="Reloj">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Boton_minimizar">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../Imagenes/minimizar-signo.png</normaloff>../Imagenes/minimizar-signo.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Boton_restaurar">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../Imagenes/minimizar.png</normaloff>../Imagenes/minimizar.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Boton_maximizar">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../Imagenes/maximizar.png</normaloff>../Imagenes/maximizar.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Boton_cerrar">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../Imagenes/cerrar.png</normaloff>../Imagenes/cerrar.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_inferior">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QFrame" name="frame_control">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>0</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
 	background-color: rgb(255, 255, 255);
 }
 
@@ -272,56 +281,133 @@ font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
 }
 
 </string>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::StyledPanel</enum>
-          </property>
-          <property name="frameShadow">
-           <enum>QFrame::Raised</enum>
-          </property>
-          <layout class="QVBoxLayout" name="verticalLayout_3">
-           <item>
-            <widget class="QPushButton" name="Boton_resumenVentas">
-             <property name="minimumSize">
-              <size>
-               <width>40</width>
-               <height>70</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true"/>
-             </property>
-             <property name="text">
-              <string>ATRAS</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QTableView" name="tableView"/>
-           </item>
-           <item>
-            <widget class="QPushButton" name="Boton_cerrarSesion">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>120</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true"/>
-             </property>
-             <property name="text">
-              <string>COMFIRMAR PEDIDO</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-        </item>
-        <item>
-         <widget class="QFrame" name="frame_contenido">
-          <property name="styleSheet">
-           <string notr="true">QFrame{
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QPushButton" name="Boton_usuarios">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>80</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Usuarios</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="Boton_locales">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>80</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Locales</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="Boton_resumenVentas">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>80</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Resumen Ventas</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="Boton_pedidos">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>80</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Pedidos</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="Boton_productos">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>80</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Productos</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="Boton_cerrarAbrirDia">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>80</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Abrir/Cerrar Dia</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="Boton_cerrarSesion">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>80</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Cerrar Sesion</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_contenido">
+            <property name="styleSheet">
+             <string notr="true">QFrame{
 background-color: rgb(101, 101, 101);
 }
 
@@ -372,1102 +458,622 @@ background-color: rgb(205,205,205);
 color:  rgb(255,255,255);
 }
 </string>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::StyledPanel</enum>
-          </property>
-          <property name="frameShadow">
-           <enum>QFrame::Raised</enum>
-          </property>
-          <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0">
-           <property name="spacing">
-            <number>1</number>
-           </property>
-           <property name="leftMargin">
-            <number>1</number>
-           </property>
-           <property name="topMargin">
-            <number>1</number>
-           </property>
-           <property name="rightMargin">
-            <number>1</number>
-           </property>
-           <property name="bottomMargin">
-            <number>1</number>
-           </property>
-           <item>
-            <widget class="QStackedWidget" name="stacked_Menu">
-             <property name="currentIndex">
-              <number>0</number>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0">
+             <property name="spacing">
+              <number>1</number>
              </property>
-             <widget class="QWidget" name="pagina_usuarios">
-              <widget class="QStackedWidget" name="stacked_PaginaUuario">
-               <property name="geometry">
-                <rect>
-                 <x>10</x>
-                 <y>150</y>
-                 <width>1131</width>
-                 <height>571</height>
-                </rect>
-               </property>
+             <property name="leftMargin">
+              <number>1</number>
+             </property>
+             <property name="topMargin">
+              <number>1</number>
+             </property>
+             <property name="rightMargin">
+              <number>1</number>
+             </property>
+             <property name="bottomMargin">
+              <number>1</number>
+             </property>
+             <item>
+              <widget class="QStackedWidget" name="stacked_Menu">
                <property name="currentIndex">
                 <number>0</number>
                </property>
-               <widget class="QWidget" name="page">
-                <widget class="QWidget" name="layoutWidget_2">
+               <widget class="QWidget" name="pagina_usuarios">
+                <widget class="QStackedWidget" name="stacked_PaginaUsuario">
                  <property name="geometry">
                   <rect>
                    <x>10</x>
-                   <y>20</y>
-                   <width>731</width>
-                   <height>531</height>
-                  </rect>
-                 </property>
-                 <layout class="QGridLayout" name="gridLayout_3">
-                  <property name="sizeConstraint">
-                   <enum>QLayout::SetMinAndMaxSize</enum>
-                  </property>
-                  <item row="0" column="3">
-                   <widget class="QPushButton" name="Mesa3_3">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                    </property>
-                    <property name="text">
-                     <string>Producto 3</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="0" column="1">
-                   <widget class="QPushButton" name="Mesa2_4">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                    </property>
-                    <property name="text">
-                     <string>Producto 1</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="0" column="2">
-                   <widget class="QPushButton" name="Mesa2_5">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                    </property>
-                    <property name="text">
-                     <string>Producto 2</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
-                <widget class="QWidget" name="layoutWidget_3">
-                 <property name="geometry">
-                  <rect>
-                   <x>780</x>
                    <y>110</y>
-                   <width>311</width>
-                   <height>171</height>
+                   <width>1161</width>
+                   <height>611</height>
                   </rect>
                  </property>
-                 <layout class="QGridLayout" name="gridLayout_4">
-                  <property name="sizeConstraint">
-                   <enum>QLayout::SetMinAndMaxSize</enum>
-                  </property>
-                  <item row="1" column="1">
-                   <widget class="QPushButton" name="Mesa11_3">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                    </property>
-                    <property name="text">
-                     <string>LIBRE</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="1" column="2">
-                   <widget class="QPushButton" name="Mesa12_3">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                    </property>
-                    <property name="text">
-                     <string>LIBRE</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="0" column="1">
-                   <widget class="QPushButton" name="Mesa7_3">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                    </property>
-                    <property name="text">
-                     <string>LIBRE</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="0" column="2">
-                   <widget class="QPushButton" name="Mesa8_3">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                    </property>
-                    <property name="text">
-                     <string>LIBRE</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
-                <widget class="QPushButton" name="Mesa1_3">
-                 <property name="geometry">
-                  <rect>
-                   <x>860</x>
-                   <y>370</y>
-                   <width>178</width>
-                   <height>172</height>
-                  </rect>
+                 <property name="currentIndex">
+                  <number>2</number>
                  </property>
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Yu Gothic UI Semibold</family>
-                   <pointsize>15</pointsize>
-                   <italic>false</italic>
-                   <strikeout>false</strikeout>
-                   <stylestrategy>PreferDefault</stylestrategy>
-                   <fontweight></fontweight>
-                  </font>
-                 </property>
-                 <property name="whatsThis">
-                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;libre&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="layoutDirection">
-                  <enum>Qt::LeftToRight</enum>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                 </property>
-                 <property name="text">
-                  <string>LIBRE</string>
-                 </property>
-                 <property name="icon">
-                  <iconset>
-                   <normaloff>../Users/holan/OneDrive/Escritorio/tabla.png</normaloff>../Users/holan/OneDrive/Escritorio/tabla.png</iconset>
-                 </property>
-                 <property name="iconSize">
-                  <size>
-                   <width>100</width>
-                   <height>100</height>
-                  </size>
-                 </property>
-                </widget>
-               </widget>
-               <widget class="QWidget" name="Pagina_AgregarUsuario">
-                <layout class="QVBoxLayout" name="verticalLayout_8">
-                 <item>
-                  <layout class="QHBoxLayout" name="Layout_AgregarUsuario">
+                 <widget class="QWidget" name="Pagina_AgregarUsuario">
+                  <layout class="QVBoxLayout" name="verticalLayout_8">
                    <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_7">
-                     <property name="spacing">
-                      <number>30</number>
+                    <widget class="QLabel" name="label_5">
+                     <property name="text">
+                      <string>AGREGAR USUARIOS</string>
                      </property>
-                    </layout>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
                    </item>
                    <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_6">
-                     <property name="spacing">
-                      <number>30</number>
+                    <spacer name="verticalSpacer">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
                      </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="Layout_AgregarUsuario">
                      <item>
-                      <layout class="QGridLayout" name="gridLayout_2">
-                       <property name="sizeConstraint">
-                        <enum>QLayout::SetMinAndMaxSize</enum>
+                      <layout class="QVBoxLayout" name="verticalLayout_7">
+                       <property name="spacing">
+                        <number>30</number>
                        </property>
-                       <item row="1" column="3">
-                        <widget class="QPushButton" name="Mesa2_3">
-                         <property name="sizePolicy">
-                          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                           <horstretch>0</horstretch>
-                           <verstretch>0</verstretch>
-                          </sizepolicy>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                         </property>
+                       <item>
+                        <widget class="QLabel" name="Label_NombreUsuario">
                          <property name="text">
-                          <string>Restaurante 1</string>
+                          <string>Nombre</string>
                          </property>
                         </widget>
                        </item>
-                       <item row="1" column="6">
-                        <widget class="QPushButton" name="Mesa3_2">
-                         <property name="sizePolicy">
-                          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                           <horstretch>0</horstretch>
-                           <verstretch>0</verstretch>
-                          </sizepolicy>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                         </property>
+                       <item>
+                        <widget class="QLabel" name="Label_FuncionUsuario">
                          <property name="text">
-                          <string>Restaurante 3</string>
+                          <string>Funcion</string>
                          </property>
                         </widget>
                        </item>
-                       <item row="1" column="4">
-                        <widget class="QPushButton" name="Mesa2_2">
-                         <property name="sizePolicy">
-                          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                           <horstretch>0</horstretch>
-                           <verstretch>0</verstretch>
-                          </sizepolicy>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                         </property>
+                       <item>
+                        <widget class="QLabel" name="Label_ContrasenaUsuario">
                          <property name="text">
-                          <string>Restaurante 2</string>
+                          <string>Contraseña</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="Label_CodigoUsuario">
+                         <property name="text">
+                          <string>Codigo</string>
                          </property>
                         </widget>
                        </item>
                       </layout>
                      </item>
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_6">
+                       <property name="spacing">
+                        <number>30</number>
+                       </property>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_NombreUsuario"/>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_FuncionUsuario"/>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_ContrasenaUsuario"/>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_CodigoUsuario"/>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_4">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
                     </layout>
                    </item>
-                  </layout>
-                 </item>
-                </layout>
-               </widget>
-               <widget class="QWidget" name="Pagina_Mesas">
-                <layout class="QVBoxLayout" name="verticalLayout_12">
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_10">
                    <item>
-                    <layout class="QGridLayout" name="gridLayout">
-                     <property name="sizeConstraint">
-                      <enum>QLayout::SetMinAndMaxSize</enum>
+                    <spacer name="verticalSpacer_2">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
                      </property>
-                     <item row="3" column="4">
-                      <widget class="QPushButton" name="Mesa12">
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>LIBRE</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="0" column="2">
-                      <widget class="QPushButton" name="Mesa2">
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>LIBRE</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="2" column="4">
-                      <widget class="QPushButton" name="Mesa8">
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>LIBRE</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="2" column="3">
-                      <widget class="QPushButton" name="Mesa7">
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>LIBRE</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="3" column="0">
-                      <widget class="QPushButton" name="Mesa9">
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>LIBRE</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="0" column="0">
-                      <widget class="QPushButton" name="Mesa1">
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <family>Yu Gothic UI Semibold</family>
-                         <pointsize>15</pointsize>
-                         <italic>false</italic>
-                         <strikeout>false</strikeout>
-                         <stylestrategy>PreferDefault</stylestrategy>
-                         <fontweight></fontweight>
-                        </font>
-                       </property>
-                       <property name="whatsThis">
-                        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;libre&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                       </property>
-                       <property name="layoutDirection">
-                        <enum>Qt::LeftToRight</enum>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>LIBRE</string>
-                       </property>
-                       <property name="icon">
-                        <iconset>
-                         <normaloff>../Users/holan/OneDrive/Escritorio/tabla.png</normaloff>../Users/holan/OneDrive/Escritorio/tabla.png</iconset>
-                       </property>
-                       <property name="iconSize">
-                        <size>
-                         <width>100</width>
-                         <height>100</height>
-                        </size>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="3" column="2">
-                      <widget class="QPushButton" name="Mesa10">
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>LIBRE</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="2" column="0">
-                      <widget class="QPushButton" name="Mesa5">
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>LIBRE</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="0" column="4">
-                      <widget class="QPushButton" name="Mesa4">
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>LIBRE</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="3" column="3">
-                      <widget class="QPushButton" name="Mesa11">
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>LIBRE</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="0" column="3">
-                      <widget class="QPushButton" name="Mesa3">
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>LIBRE</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="2" column="2">
-                      <widget class="QPushButton" name="Mesa6">
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QPushButton{
-font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;
-	color: rgb(0,0,0);
-	background-color: rgb(38, 0, 0);
-border-radius: 30px;
-
-}
-QPushButton{
-background-color: rgb(230,230,230);
-	color:rgb(0,0,0)
-
-}
-QPushButton:hover{
-color: rgb(61, 61, 61);
-	background-color: rgb(179, 179, 179);
-
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>LIBRE</string>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
                    </item>
-                  </layout>
-                 </item>
-                </layout>
-               </widget>
-               <widget class="QWidget" name="Pagina_SeleccionMesero">
-                <layout class="QVBoxLayout" name="verticalLayout_11">
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_9"/>
-                 </item>
-                 <item>
-                  <spacer name="verticalSpacer_4">
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_8">
                    <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_10">
+                    <layout class="QHBoxLayout" name="horizontalLayout_6">
                      <item>
-                      <widget class="QPushButton" name="pushButton_4">
-                       <property name="minimumSize">
-                        <size>
-                         <width>100</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="text">
-                        <string>PushButton</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QPushButton" name="pushButton_3">
-                       <property name="minimumSize">
-                        <size>
-                         <width>100</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="text">
-                        <string>PushButton</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QPushButton" name="pushButton">
-                       <property name="minimumSize">
-                        <size>
-                         <width>100</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="text">
-                        <string>PushButton</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QPushButton" name="pushButton_2">
-                       <property name="minimumSize">
-                        <size>
-                         <width>100</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="text">
-                        <string>PushButton</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QPushButton" name="pushButton_5">
+                      <widget class="QLabel" name="label_6">
                        <property name="minimumSize">
                         <size>
                          <width>200</width>
-                         <height>50</height>
+                         <height>0</height>
                         </size>
                        </property>
                        <property name="text">
-                        <string>PushButton</string>
+                        <string/>
                        </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </item>
-                   <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_9">
-                     <property name="spacing">
-                      <number>30</number>
-                     </property>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_6">
-                       <property name="minimumSize">
-                        <size>
-                         <width>0</width>
-                         <height>40</height>
-                        </size>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
                        </property>
                       </widget>
                      </item>
                      <item>
-                      <widget class="QLineEdit" name="lineEdit_NombreUsuario_2">
-                       <property name="minimumSize">
+                      <spacer name="horizontalSpacer_3">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
                         <size>
-                         <width>0</width>
-                         <height>40</height>
+                         <width>40</width>
+                         <height>20</height>
                         </size>
                        </property>
-                      </widget>
+                      </spacer>
                      </item>
                      <item>
-                      <widget class="QLineEdit" name="lineEdit_FuncionUsuario_2">
+                      <widget class="QPushButton" name="Boton_ConfirmarAgregarUsuario">
                        <property name="minimumSize">
                         <size>
-                         <width>0</width>
-                         <height>40</height>
+                         <width>90</width>
+                         <height>30</height>
                         </size>
                        </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_ContrasenaUsuario_3">
-                       <property name="minimumSize">
-                        <size>
-                         <width>0</width>
-                         <height>40</height>
-                        </size>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_ContrasenaUsuario_2">
-                       <property name="minimumSize">
-                        <size>
-                         <width>0</width>
-                         <height>40</height>
-                        </size>
+                       <property name="text">
+                        <string>Aceptar</string>
                        </property>
                       </widget>
                      </item>
                     </layout>
                    </item>
                   </layout>
-                 </item>
-                 <item>
-                  <spacer name="verticalSpacer_3">
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 </widget>
+                 <widget class="QWidget" name="Pagina_EliminarUsuario">
+                  <layout class="QVBoxLayout" name="verticalLayout_12">
                    <item>
-                    <widget class="QLabel" name="label_14">
-                     <property name="minimumSize">
+                    <widget class="QLabel" name="label_EliminarUsuario">
+                     <property name="text">
+                      <string>ELIMINAR USUARIO</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_10">
+                     <item>
+                      <widget class="QLabel" name="Label_NombreEliminarUsuario">
+                       <property name="text">
+                        <string>Nombre</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEdit_EliminarUsuario"/>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="Boton_BuscarUsuario_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>90</width>
+                         <height>35</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>Buscar</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QTableWidget" name="tabla_eliminarUsuario">
+                     <column>
+                      <property name="text">
+                       <string>Nombre</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Producto</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Contrasena</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </column>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_11">
+                     <item>
+                      <widget class="QLabel" name="label_18">
+                       <property name="minimumSize">
+                        <size>
+                         <width>200</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_7">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="Boton_EliminarUsuario_3">
+                       <property name="minimumSize">
+                        <size>
+                         <width>120</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>ELIMINAR</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="Pagina_ModificarUsuario">
+                  <layout class="QVBoxLayout" name="verticalLayout_11">
+                   <item>
+                    <widget class="QLabel" name="label_15">
+                     <property name="text">
+                      <string>MODIFICAR USUARIO</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_9">
+                     <item>
+                      <widget class="QLabel" name="label_BuscarUsuario">
+                       <property name="text">
+                        <string>Usuario</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEdit_BuscarUsuario"/>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="Boton_BuscarUsuario">
+                       <property name="minimumSize">
+                        <size>
+                         <width>90</width>
+                         <height>35</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>Buscar</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_4">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
                       <size>
-                       <width>0</width>
-                       <height>50</height>
+                       <width>20</width>
+                       <height>40</height>
                       </size>
                      </property>
-                     <property name="text">
-                      <string/>
-                     </property>
-                    </widget>
+                    </spacer>
                    </item>
                    <item>
-                    <widget class="QLabel" name="label_3">
-                     <property name="text">
-                      <string/>
-                     </property>
-                    </widget>
+                    <layout class="QHBoxLayout" name="horizontalLayout_8">
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_10">
+                       <item>
+                        <widget class="QLabel" name="label_CodigoUsuario">
+                         <property name="text">
+                          <string>Codigo</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_NombreUsuario">
+                         <property name="text">
+                          <string>Nombre</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_Funcionusuario">
+                         <property name="text">
+                          <string>Funcion</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_ContrasenaUsuario">
+                         <property name="text">
+                          <string>Contraseña</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_9">
+                       <property name="spacing">
+                        <number>30</number>
+                       </property>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_6"/>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_NombreUsuario_2"/>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_FuncionUsuario_2"/>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_ContrasenaUsuario_2"/>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_6">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
                    </item>
                    <item>
-                    <spacer name="horizontalSpacer_5">
+                    <spacer name="verticalSpacer_3">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_7">
+                     <item>
+                      <widget class="QLabel" name="label_14">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_3">
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_5">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="Boton_AceptarModificarUsuario">
+                       <property name="minimumSize">
+                        <size>
+                         <width>90</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>Aceptar</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+                <widget class="QWidget" name="layoutWidget">
+                 <property name="geometry">
+                  <rect>
+                   <x>310</x>
+                   <y>10</y>
+                   <width>511</width>
+                   <height>98</height>
+                  </rect>
+                 </property>
+                 <layout class="QHBoxLayout" name="Layout_UsuariosCRUD">
+                  <property name="spacing">
+                   <number>19</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>9</number>
+                  </property>
+                  <item>
+                   <widget class="QPushButton" name="Boton_AgregarUsuario">
+                    <property name="minimumSize">
+                     <size>
+                      <width>80</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Agregar</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="Boton_ModificaUsuario">
+                    <property name="minimumSize">
+                     <size>
+                      <width>80</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Modificar</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="Boton_EliminarUsuario">
+                    <property name="minimumSize">
+                     <size>
+                      <width>80</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Eliminar</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+               <widget class="QWidget" name="pagina_ResumenV">
+                <layout class="QVBoxLayout" name="verticalLayout_5">
+                 <item>
+                  <widget class="QLabel" name="label">
+                   <property name="frameShadow">
+                    <enum>QFrame::Plain</enum>
+                   </property>
+                   <property name="text">
+                    <string>RESUMEN VENTAS</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTableWidget" name="Tabla_basedatos">
+                   <column>
+                    <property name="text">
+                     <string>Producto</string>
+                    </property>
+                    <property name="textAlignment">
+                     <set>AlignLeading|AlignVCenter</set>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Local</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Cantidad</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Precio Unidad</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Total</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                   <item>
+                    <spacer name="horizontalSpacer_2">
                      <property name="orientation">
                       <enum>Qt::Horizontal</enum>
                      </property>
@@ -1480,15 +1086,15 @@ color: rgb(61, 61, 61);
                     </spacer>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="Boton_AceptarModificarUsuario">
+                    <widget class="QPushButton" name="Boton_ActualizarBase">
                      <property name="minimumSize">
                       <size>
-                       <width>300</width>
-                       <height>100</height>
+                       <width>100</width>
+                       <height>40</height>
                       </size>
                      </property>
                      <property name="text">
-                      <string>SELECCIONAR MESERO</string>
+                      <string>Refrescar</string>
                      </property>
                     </widget>
                    </item>
@@ -1496,103 +1102,1111 @@ color: rgb(61, 61, 61);
                  </item>
                 </layout>
                </widget>
+               <widget class="QWidget" name="pagina_Pedidos"/>
+               <widget class="QWidget" name="pagina_Productos">
+                <widget class="QWidget" name="layoutWidget_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>300</x>
+                   <y>10</y>
+                   <width>511</width>
+                   <height>98</height>
+                  </rect>
+                 </property>
+                 <layout class="QHBoxLayout" name="Layout_ProductosCRUD">
+                  <property name="spacing">
+                   <number>19</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>9</number>
+                  </property>
+                  <item>
+                   <widget class="QPushButton" name="Boton_AgregarProducto">
+                    <property name="minimumSize">
+                     <size>
+                      <width>80</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Agregar</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="Boton_ModificarProducto">
+                    <property name="minimumSize">
+                     <size>
+                      <width>80</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Modificar</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="Boton_EliminarProducto">
+                    <property name="minimumSize">
+                     <size>
+                      <width>80</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Eliminar</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QStackedWidget" name="stacked_PaginaProductos">
+                 <property name="geometry">
+                  <rect>
+                   <x>30</x>
+                   <y>120</y>
+                   <width>1151</width>
+                   <height>601</height>
+                  </rect>
+                 </property>
+                 <property name="currentIndex">
+                  <number>1</number>
+                 </property>
+                 <widget class="QWidget" name="Pagina_AgregarProductos">
+                  <layout class="QVBoxLayout" name="verticalLayout_20">
+                   <item>
+                    <widget class="QLabel" name="label_AgregarProducto">
+                     <property name="text">
+                      <string>AGREGAR PRODUCTO</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_9">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_20">
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_21">
+                       <property name="spacing">
+                        <number>30</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="label_CodigoProducto">
+                         <property name="text">
+                          <string>Codigo</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_NombreProducto">
+                         <property name="text">
+                          <string>Nombre</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_LocalPertenece">
+                         <property name="text">
+                          <string>Local Pertenece</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_22">
+                       <property name="spacing">
+                        <number>30</number>
+                       </property>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_CodigoProducto"/>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_NombreProducto"/>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_LocalPertenece"/>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_13">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_10">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_21">
+                     <item>
+                      <widget class="QLabel" name="label_26">
+                       <property name="minimumSize">
+                        <size>
+                         <width>200</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_14">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="Boton_ComfimarProductos">
+                       <property name="minimumSize">
+                        <size>
+                         <width>90</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>Aceptar</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="Pagina_EliminarProductos">
+                  <layout class="QVBoxLayout" name="verticalLayout_23">
+                   <item>
+                    <widget class="QLabel" name="label_Eliimar">
+                     <property name="text">
+                      <string>ELIMINAR LOCAL</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_22">
+                     <item>
+                      <widget class="QLabel" name="label_NombreProductoEliminar">
+                       <property name="text">
+                        <string>Nombre</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEdit_BuscarProductoEliminar"/>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="Boton_BuscarProductoEliminar">
+                       <property name="minimumSize">
+                        <size>
+                         <width>90</width>
+                         <height>35</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>Buscar</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QTableWidget" name="tabla_EliminarLocal_2">
+                     <column>
+                      <property name="text">
+                       <string>Nombre</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Producto</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Contrasena</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </column>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_23">
+                     <item>
+                      <widget class="QLabel" name="label_30">
+                       <property name="minimumSize">
+                        <size>
+                         <width>200</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_15">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="Boton_EliminarProducto_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>120</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>ELIMINAR</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="Pagina_ModificarProducto">
+                  <layout class="QVBoxLayout" name="verticalLayout_24">
+                   <item>
+                    <widget class="QLabel" name="label_ModificarProductos">
+                     <property name="text">
+                      <string>MODIFICAR PRODUCTOS</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_24">
+                     <item>
+                      <widget class="QLabel" name="label_NombreProductoModificarLocal">
+                       <property name="text">
+                        <string>Nombre</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEdit_BuscarProducto_ModificarLocal"/>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="Boton_BuscarProductoModificar">
+                       <property name="minimumSize">
+                        <size>
+                         <width>90</width>
+                         <height>35</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>Buscar</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_11">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_25">
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_25">
+                       <item>
+                        <widget class="QLabel" name="label_CodigoModificarProducto">
+                         <property name="text">
+                          <string>Codigo</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_NombreModificarProducto">
+                         <property name="text">
+                          <string>Nombre</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_LocalPerteneceModificarProducto">
+                         <property name="text">
+                          <string>Tipo Comida</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_26">
+                       <property name="spacing">
+                        <number>30</number>
+                       </property>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_CodigoModificarProducto"/>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_NombreModificarProducto"/>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_LocalPerteneceModificarProducto"/>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_16">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_12">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_26">
+                     <item>
+                      <widget class="QLabel" name="label_36">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_17">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="Boton_ComfirmarModificarProducto_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>90</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>Aceptar</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </widget>
+               <widget class="QWidget" name="pagina_CerrarSesion">
+                <widget class="QPushButton" name="Boton_CerrarSesion">
+                 <property name="geometry">
+                  <rect>
+                   <x>230</x>
+                   <y>200</y>
+                   <width>601</width>
+                   <height>221</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>CERRAR SESION</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="Boton_ComfirmarCerrarSesion">
+                 <property name="geometry">
+                  <rect>
+                   <x>450</x>
+                   <y>510</y>
+                   <width>181</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>COMFIRMAR</string>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QWidget" name="pagina_AbrirCerrarDia_2">
+                <widget class="QPushButton" name="Boton_AbrirDia">
+                 <property name="geometry">
+                  <rect>
+                   <x>140</x>
+                   <y>210</y>
+                   <width>341</width>
+                   <height>251</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>ABRIR DIA </string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="Boton_CerrarDia">
+                 <property name="geometry">
+                  <rect>
+                   <x>650</x>
+                   <y>210</y>
+                   <width>341</width>
+                   <height>251</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>CERRAR DIA </string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="Boton_ComfirmarCerrarAbrirDia">
+                 <property name="geometry">
+                  <rect>
+                   <x>470</x>
+                   <y>560</y>
+                   <width>201</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>COMFIRMAR</string>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QWidget" name="pagina_locales">
+                <widget class="QStackedWidget" name="stacked_PaginaLocal">
+                 <property name="geometry">
+                  <rect>
+                   <x>20</x>
+                   <y>110</y>
+                   <width>1151</width>
+                   <height>601</height>
+                  </rect>
+                 </property>
+                 <property name="currentIndex">
+                  <number>1</number>
+                 </property>
+                 <widget class="QWidget" name="Pagina_AgregarLocal">
+                  <layout class="QVBoxLayout" name="verticalLayout_13">
+                   <item>
+                    <widget class="QLabel" name="label_AgregaLocal">
+                     <property name="text">
+                      <string>AGREGAR LOCAL</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_5">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_12">
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_14">
+                       <property name="spacing">
+                        <number>30</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="label_CodigoLocal">
+                         <property name="text">
+                          <string>Codigo</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_NombreLocal_2">
+                         <property name="text">
+                          <string>Nombre</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_TipoComida">
+                         <property name="text">
+                          <string>Tipo Comida</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_15">
+                       <property name="spacing">
+                        <number>30</number>
+                       </property>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_CodigoLocal"/>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_NombreLocal"/>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_TipoComida"/>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_8">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_6">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_13">
+                     <item>
+                      <widget class="QLabel" name="label_24">
+                       <property name="minimumSize">
+                        <size>
+                         <width>200</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_9">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="Boton_ComfimarLocal">
+                       <property name="minimumSize">
+                        <size>
+                         <width>110</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>Comfirmar</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="Pagina_EliminarLocal">
+                  <layout class="QVBoxLayout" name="verticalLayout_16">
+                   <item>
+                    <widget class="QLabel" name="label_25">
+                     <property name="text">
+                      <string>ELIMINAR LOCAL</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_14">
+                     <item>
+                      <widget class="QLabel" name="label_NombreLocal">
+                       <property name="text">
+                        <string>Nombre</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEdit_BuscarLocal"/>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="Boton_BuscarLocal">
+                       <property name="minimumSize">
+                        <size>
+                         <width>90</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>BUSCAR</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QTableWidget" name="tabla_EliminarLocal">
+                     <column>
+                      <property name="text">
+                       <string>Nombre</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Producto</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Contrasena</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </column>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_15">
+                     <item>
+                      <widget class="QLabel" name="label_27">
+                       <property name="minimumSize">
+                        <size>
+                         <width>200</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_10">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="Boton_EliminarLocal">
+                       <property name="minimumSize">
+                        <size>
+                         <width>120</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>ELIMINAR</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="Pagina_ModificarLocal">
+                  <layout class="QVBoxLayout" name="verticalLayout_17">
+                   <item>
+                    <widget class="QLabel" name="label_28">
+                     <property name="text">
+                      <string>MODIFICAR LOCAL</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_16">
+                     <item>
+                      <widget class="QLabel" name="label_NombreLocalModificarLocal">
+                       <property name="text">
+                        <string>Nombre</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="lineEdit_BuscarLocal_ModificarLocal"/>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="Boton_BuscarLocal_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>90</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>Buscar</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_7">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_17">
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_18">
+                       <item>
+                        <widget class="QLabel" name="label_CodigoModificarLocal">
+                         <property name="text">
+                          <string>Codigo</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_NombreModificarLocal">
+                         <property name="text">
+                          <string>Nombre</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_TipoComidaModificarLocal">
+                         <property name="text">
+                          <string>Tipo Comida</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_19">
+                       <property name="spacing">
+                        <number>30</number>
+                       </property>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_CodigoModificarLocal"/>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_NombreModificarLocal"/>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_20"/>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_11">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_8">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_18">
+                     <item>
+                      <widget class="QLabel" name="label_35">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_12">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="Boton_ComfirmarModificarLocal">
+                       <property name="minimumSize">
+                        <size>
+                         <width>90</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>Aceptar</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+                <widget class="QWidget" name="layoutWidget_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>300</x>
+                   <y>10</y>
+                   <width>511</width>
+                   <height>98</height>
+                  </rect>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_19">
+                  <property name="spacing">
+                   <number>19</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>9</number>
+                  </property>
+                  <item>
+                   <widget class="QPushButton" name="Boton_AgregarLocal">
+                    <property name="minimumSize">
+                     <size>
+                      <width>80</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Agregar</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="Boton_ModificarLocal">
+                    <property name="minimumSize">
+                     <size>
+                      <width>80</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Modificar</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="Boton_EliminarLocal_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>80</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Eliminar</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
               </widget>
-              <widget class="QWidget" name="layoutWidget">
-               <property name="geometry">
-                <rect>
-                 <x>20</x>
-                 <y>10</y>
-                 <width>1121</width>
-                 <height>131</height>
-                </rect>
-               </property>
-               <layout class="QHBoxLayout" name="Layout_UsuariosCRUD">
-                <property name="spacing">
-                 <number>19</number>
-                </property>
-                <property name="leftMargin">
-                 <number>9</number>
-                </property>
-                <property name="topMargin">
-                 <number>9</number>
-                </property>
-                <property name="rightMargin">
-                 <number>9</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>9</number>
-                </property>
-                <item>
-                 <widget class="QPushButton" name="Boton_AgregarUsuario">
-                  <property name="minimumSize">
-                   <size>
-                    <width>80</width>
-                    <height>100</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>MESAS</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Boton_ModificaUsuario">
-                  <property name="minimumSize">
-                   <size>
-                    <width>80</width>
-                    <height>100</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>RESTAURANTES</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Boton_ModificaUsuario_2">
-                  <property name="minimumSize">
-                   <size>
-                    <width>80</width>
-                    <height>100</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>COMIDA</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Boton_EliminarUsuario">
-                  <property name="minimumSize">
-                   <size>
-                    <width>80</width>
-                    <height>100</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>300</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>SELECCION MESERO</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </widget>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     </item>
-    </layout>
-   </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
