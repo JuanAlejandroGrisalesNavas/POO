@@ -23,7 +23,7 @@
    <string notr="true">background-color: rgb(10, 101, 112);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="imagen4">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -39,7 +39,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="imagen5">
     <property name="geometry">
      <rect>
       <x>390</x>
@@ -55,7 +55,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="imagen6">
     <property name="geometry">
      <rect>
       <x>770</x>
@@ -71,7 +71,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="imagen7">
     <property name="geometry">
      <rect>
       <x>1150</x>
@@ -87,7 +87,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="imagen8">
     <property name="geometry">
      <rect>
       <x>1150</x>
@@ -103,7 +103,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_8">
+   <widget class="QLabel" name="imagen9">
     <property name="geometry">
      <rect>
       <x>770</x>
@@ -136,7 +136,7 @@ font: 75 15pt &quot;Yu Gothic UI Semibold&quot;;</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Mostrar contraseña&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="Boton_mostrarContrasena">
     <property name="geometry">
      <rect>
       <x>530</x>
@@ -165,7 +165,7 @@ border-radius: 15px;
      <string/>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="lineEdit_Ingrese_usuario">
     <property name="geometry">
      <rect>
       <x>500</x>
@@ -185,7 +185,7 @@ border-radius: 15px;</string>
      <string>Ingrese Usuario</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="lineEdit_Ingrese_contrasena">
     <property name="geometry">
      <rect>
       <x>510</x>
@@ -205,7 +205,7 @@ border-radius: 15px;</string>
      <string>Ingrese Contraseña</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_9">
+   <widget class="QLabel" name="imagen10">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -225,7 +225,7 @@ background-color: #000000ff;
      <string>Usuario</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_10">
+   <widget class="QLabel" name="imagen">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -241,7 +241,7 @@ background-color: #000000ff;
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_11">
+   <widget class="QLabel" name="imagen2">
     <property name="geometry">
      <rect>
       <x>390</x>
@@ -257,7 +257,7 @@ background-color: #000000ff;
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_12">
+   <widget class="QLabel" name="imagen3">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -276,7 +276,7 @@ background-color: #000000ff;
      <string>Contraseña</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="Boton_Salir">
     <property name="geometry">
      <rect>
       <x>1320</x>
@@ -307,7 +307,7 @@ border-radius: 10px;
      <string>SALIR</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="Boton_ingresar">
     <property name="geometry">
      <rect>
       <x>700</x>
@@ -339,22 +339,22 @@ border-radius: 10px;
      <string>INGRESAR</string>
     </property>
    </widget>
-   <zorder>label_11</zorder>
-   <zorder>label_5</zorder>
-   <zorder>label_6</zorder>
-   <zorder>label_7</zorder>
-   <zorder>label_8</zorder>
-   <zorder>label_2</zorder>
-   <zorder>label_4</zorder>
+   <zorder>imagen2</zorder>
+   <zorder>imagen6</zorder>
+   <zorder>imagen7</zorder>
+   <zorder>imagen8</zorder>
+   <zorder>imagen9</zorder>
+   <zorder>imagen4</zorder>
+   <zorder>imagen5</zorder>
    <zorder>MostrarContra</zorder>
-   <zorder>pushButton_2</zorder>
-   <zorder>lineEdit</zorder>
-   <zorder>lineEdit_2</zorder>
-   <zorder>label_9</zorder>
-   <zorder>label_10</zorder>
-   <zorder>label_12</zorder>
-   <zorder>pushButton_3</zorder>
-   <zorder>pushButton</zorder>
+   <zorder>Boton_mostrarContrasena</zorder>
+   <zorder>lineEdit_Ingrese_usuario</zorder>
+   <zorder>lineEdit_Ingrese_contrasena</zorder>
+   <zorder>imagen10</zorder>
+   <zorder>imagen</zorder>
+   <zorder>imagen3</zorder>
+   <zorder>Boton_Salir</zorder>
+   <zorder>Boton_ingresar</zorder>
   </widget>
  </widget>
  <resources>
