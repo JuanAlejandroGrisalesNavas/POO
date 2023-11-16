@@ -484,10 +484,10 @@ color:  rgb(255,255,255);
              <item>
               <widget class="QStackedWidget" name="stacked_Menu">
                <property name="currentIndex">
-                <number>3</number>
+                <number>0</number>
                </property>
                <widget class="QWidget" name="pagina_usuarios">
-                <widget class="QStackedWidget" name="stacked_PaginaUuario">
+                <widget class="QStackedWidget" name="stacked_PaginaUsuario">
                  <property name="geometry">
                   <rect>
                    <x>10</x>
@@ -497,7 +497,7 @@ color:  rgb(255,255,255);
                   </rect>
                  </property>
                  <property name="currentIndex">
-                  <number>1</number>
+                  <number>2</number>
                  </property>
                  <widget class="QWidget" name="Pagina_AgregarUsuario">
                   <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -1102,8 +1102,8 @@ color:  rgb(255,255,255);
                  </item>
                 </layout>
                </widget>
-               <widget class="QWidget" name="Pagina_Pedidos"/>
-               <widget class="QWidget" name="Pagina_Productos">
+               <widget class="QWidget" name="pagina_Pedidos"/>
+               <widget class="QWidget" name="pagina_Productos">
                 <widget class="QWidget" name="layoutWidget_3">
                  <property name="geometry">
                   <rect>
@@ -1613,7 +1613,7 @@ color:  rgb(255,255,255);
                  </widget>
                 </widget>
                </widget>
-               <widget class="QWidget" name="Pagina_CerrarSesion">
+               <widget class="QWidget" name="pagina_CerrarSesion">
                 <widget class="QPushButton" name="Boton_CerrarSesion">
                  <property name="geometry">
                   <rect>
@@ -1644,7 +1644,7 @@ color:  rgb(255,255,255);
                  </property>
                 </widget>
                </widget>
-               <widget class="QWidget" name="Pagina_AbrirCerrarDia_2">
+               <widget class="QWidget" name="pagina_AbrirCerrarDia_2">
                 <widget class="QPushButton" name="Boton_AbrirDia">
                  <property name="geometry">
                   <rect>
